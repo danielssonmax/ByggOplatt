@@ -4,14 +4,14 @@ import { ServiceCityPage } from "@/components/service-city-page"
 export const metadata: Metadata = {
   title: "Köksrenovering i Eskilstuna",
   description:
-    "Professionell köksrenovering i Eskilstuna. Komplett renovering med VVS, el, plattsättning och montering. Skräddarsydda lösningar. Begär offert!",
+    "Köksrenovering i Eskilstuna: rivning, VVS, el, kakel och montering med en kontaktperson. Vi utgår från Gamla staden, nära de många husen från 1940–70-talen.",
   alternates: {
     canonical: "https://byggoplattsattning.se/koksrenovering/eskilstuna",
   },
   openGraph: {
     title: "Köksrenovering Eskilstuna | Bygg & Plattsättning",
     description:
-      "Professionell köksrenovering i Eskilstuna. Komplett renovering med VVS, el, plattsättning och montering av köksinredning.",
+      "Köksrenovering i Eskilstuna från vår bas på Kyrkogatan i Gamla staden. Rivning, VVS, el, plattsättning och montering, med fast pris och en kontaktperson.",
     url: "https://byggoplattsattning.se/koksrenovering/eskilstuna",
     type: "website",
     siteName: "Bygg & Plattsättning",
@@ -26,12 +26,12 @@ export default function KoksrenoveringEskilstuna() {
       serviceName="Köksrenovering"
       cityName="Eskilstuna"
       heroTitle="Köksrenovering i Eskilstuna"
-      heroDescription="Köket är hemmets hjärta – platsen där familjen samlas och vardagen tar plats. Vi hjälper dig att skapa ett modernt, funktionellt och personligt kök som passar din livsstil. Från planering till färdig installation tar vi hand om hela processen."
-      introTitle="Professionell Köksrenovering i Eskilstuna"
+      heroDescription="Vi utgår från Kyrkogatan i Gamla staden, så ett platsbesök i Eskilstuna är aldrig långt bort. Vi tar hand om hela köksrenoveringen, från rivning och nya ledningar till kakel, montering och målning, och du har samma kontaktperson hela vägen."
+      introTitle="Nytt kök i en stad byggd på 40-, 50- och 60-talen"
       introContent={[
-        "Att renovera köket är en investering i både hemmet och livskvaliteten. Med rätt planering och kunniga hantverkare kan du förvandla ditt gamla kök till ett modernt, personligt och funktionellt rum som passar din stil.",
-        "Vi hjälper dig genom hela processen – från inspiration och planering till färdig köksrenovering i Eskilstuna. Tillsammans skapar vi ett kök som kombinerar smart förvaring, snygg design och hållbara material.",
-        "Som totalentreprenör koordinerar vi alla hantverkare och ser till att din köksrenovering går smidigt. Du har en kontaktperson genom hela projektet och vi håller dig uppdaterad varje steg på vägen.",
+        "Eskilstuna växte som mest mellan krigen och under 1940- och 50-talen, och folkmängden toppade 1970 med 68 596 invånare. Det betyder att en stor del av stadens kök sitter i hus som är byggda före 1975. Många av dem är inne på sin andra eller tredje renovering, och det som gjordes på 80- eller 90-talet börjar ofta bli slitet, trångt eller svårt att få reservdelar till.",
+        "I äldre hus är det sällan luckorna som är problemet. Det som avgör hur jobbet blir är vad som finns bakom dem: vattenledningar som bytts i omgångar, elcentraler som inte räcker till en induktionshäll och golv som lagts ovanpå varandra genom åren. Vi tittar på allt det innan vi lämnar offert, så att priset du får verkligen täcker det kök som ska byggas.",
+        "Som totalentreprenör samordnar vi rivning, VVS, el, plattsättning av stänkskydd, montering av inredning, vitvaror och målning. Du har en kontaktperson genom hela projektet, och vi planerar momenten så att du är utan kök så kort tid som möjligt. Arbetskostnaden ger rätt till rotavdrag på 30 procent, upp till 50 000 kronor per person och år.",
       ]}
       features={[
         {
@@ -66,14 +66,33 @@ export default function KoksrenoveringEskilstuna() {
         },
       ]}
       whyChooseUsContent={[
-        "Över 20 års erfarenhet av köksrenoveringar i Eskilstuna. Vi har hjälpt hundratals kunder skapa sina drömkök.",
-        "Totalentreprenad med en kontaktperson. Du slipper koordinera olika hantverkare – vi tar hand om allt från start till mål.",
-        "Skräddarsydda lösningar efter dina behov och önskemål. Vi lyssnar på dina idéer och hjälper dig förverkliga din vision.",
-        "Fast pris och tydlig offert utan överraskningar. Du vet exakt vad köksrenoveringen kommer att kosta innan vi börjar.",
+        "Eskilstuna är vår hemstad. Vi utgår från Kyrkogatan 7C i Gamla staden och har kort väg till alla stadsdelar, vilket gör platsbesök, materialleveranser och snabba avstämningar enkla att få till.",
+        "Vi har arbetat i stadens hus i över 20 år och vet vad som brukar dölja sig i kök från 40-, 50- och 60-talen: gamla stammar, underdimensionerad el och golv i flera lager. Det planerar vi för i förväg.",
+        "Offerten är tydlig och priset fast. Vi går igenom köket på plats innan vi räknar, så att du slipper tillägg för sådant som borde ha upptäckts från början.",
+        "En kontaktperson samordnar alla yrkesgrupper, från rörmokare och elektriker till plattsättare och målare. Du behöver inte jaga någon, och vi håller dig uppdaterad om varje steg.",
       ]}
-      ctaTitle="Redo att renovera köket i Eskilstuna?"
-      ctaDescription="Kontakta oss idag för en kostnadsfri offert på din köksrenovering. Vi hjälper dig skapa ett kök du älskar."
+      ctaTitle="Dags för nytt kök i Eskilstuna?"
+      ctaDescription="Ring oss eller skicka några rader om köket, så bokar vi ett platsbesök i Eskilstuna. Offerten är kostnadsfri och priset fast."
       heroImage="/hero-image.jpg"
+      localTitle="Så renoverar vi kök i Eskilstuna"
+      localContent={[
+        "Från Kyrkogatan i Gamla staden, intill Fors kyrka, når vi hela Eskilstuna på kort tid. Det gör det enkelt att komma förbi och mäta, att hämta det som saknas under dagen och att stämma av materialval på plats i stället för över telefon. För dig som bor i lägenhet i centrum betyder det också att vi kan anpassa oss till husets tider för bullrande arbete.",
+        "Stadens kök sitter i allt från äldre trähus vid ån till flerbostadshus från efterkrigstiden och nyare lägenheter i Munktellstaden. Varje typ har sina egna förutsättningar: i de äldre husen handlar det ofta om stammar och golvnivåer, i husen från 60-talet om ventilation och el, och i nyproduktion om att få det nya att passa ihop med befintliga installationer.",
+      ]}
+      localFaq={[
+        {
+          q: "Får jag använda rotavdraget på en köksrenovering i Eskilstuna?",
+          a: "Ja, om du äger bostaden och bor där. Avdraget är 30 procent av arbetskostnaden, högst 50 000 kronor per person och år. Material och vitvaror räknas inte med. Vi drar av beloppet direkt på fakturan och sköter ansökan hos Skatteverket, så du betalar bara det som återstår.",
+        },
+        {
+          q: "Vårt kök är från 1960-talet. Behöver elen göras om?",
+          a: "Ofta, ja. En induktionshäll och en ugn på egen grupp kräver mer än vad många äldre kök är dragna för, och ibland behöver gruppcentralen kompletteras. Vår elektriker bedömer vad som krävs vid platsbesöket, så att det ingår i offerten i stället för att dyka upp mitt i jobbet.",
+        },
+        {
+          q: "Kan ni ta bort väggen mellan kök och vardagsrum?",
+          a: "Det beror på om väggen är bärande. I flerbostadshus med betongstomme är väggen mellan kök och vardagsrum ofta bärande, och då krävs en konstruktionsbedömning och ofta en anmälan till kommunen innan något rivs. Vi reder ut det före offerten, så vet du vad som gäller för just ditt hus.",
+        },
+      ]}
     />
   )
 }

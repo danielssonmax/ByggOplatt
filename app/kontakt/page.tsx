@@ -3,6 +3,8 @@ import { Mail, Phone } from "lucide-react"
 import type { Metadata } from "next"
 import { CITIES, SITE } from "@/lib/site"
 import { ContactForm } from "@/components/contact-form"
+import { AreaMap } from "@/components/area-map"
+import { CITY_INFO } from "@/lib/cities"
 
 export const metadata: Metadata = {
   title: "Kontakta oss för offert",
@@ -24,7 +26,7 @@ export default function Contact() {
     <main className="relative isolate overflow-hidden pt-24">
       <div
         aria-hidden
-        className="tile-grid absolute inset-x-0 top-0 -z-10 h-[720px] [mask-image:radial-gradient(ellipse_70%_60%_at_25%_20%,#000_25%,transparent_70%)]"
+        className="tile-wall absolute inset-x-0 top-0 -z-10 h-[720px] [mask-image:radial-gradient(ellipse_70%_60%_at_25%_20%,#000_25%,transparent_70%)]"
       />
       <div
         aria-hidden
@@ -143,22 +145,33 @@ export default function Contact() {
         </section>
 
         {/* Service area */}
-        <section aria-labelledby="vi-jobbar-i" className="mt-20 border-t border-white/[0.08] pt-10">
-          <h2 id="vi-jobbar-i" className="text-sm font-medium text-ink-400">
-            Vi jobbar i
-          </h2>
-          <ul className="mt-4 flex flex-wrap gap-2">
-            {CITIES.map((city) => (
-              <li key={city.slug}>
-                <Link
-                  href={`/badrumsrenovering/${city.slug}`}
-                  className="inline-flex rounded-lg border border-white/10 px-4 py-2 text-[0.9375rem] font-medium text-ink-200 transition-colors hover:border-white/25 hover:bg-white/[0.04] hover:text-white active:scale-[0.98]"
-                >
-                  {city.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <section aria-labelledby="vi-jobbar-i" className="mt-20 grid gap-10 border-t border-white/[0.08] pt-12 lg:grid-cols-[1fr_minmax(0,22rem)] lg:items-start">
+          <div>
+            <h2 id="vi-jobbar-i" className="text-sm font-medium text-ink-400">
+              Vi jobbar i
+            </h2>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {CITIES.map((city) => (
+                <li key={city.slug}>
+                  <Link
+                    href={`/badrumsrenovering/${city.slug}`}
+                    className="inline-flex items-baseline gap-2 rounded-lg border border-white/10 px-4 py-2 text-[0.9375rem] font-medium text-ink-200 transition-colors hover:border-white/25 hover:bg-white/[0.04] hover:text-white active:scale-[0.98]"
+                  >
+                    {city.name}
+                    <span className="text-xs font-normal tabular-nums text-ink-500">
+                      {CITY_INFO[city.slug]?.driveMin ? `${CITY_INFO[city.slug].driveMin} min` : "bas"}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 max-w-prose text-sm leading-relaxed text-ink-400">
+              Restid från vår bas på Kyrkogatan i Eskilstuna. Platsbesök bokar vi in så att resan passar in i dagen.
+            </p>
+          </div>
+          <div className="surface p-4">
+            <AreaMap />
+          </div>
         </section>
       </div>
     </main>

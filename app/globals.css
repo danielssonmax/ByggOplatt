@@ -97,13 +97,41 @@
       hover:border-white/30 hover:bg-white/[0.04] active:scale-[0.98];
   }
 
-  /* Small, tracked label above headings. Orange = brand identity. */
+  /* Small, tracked label above headings. Orange = brand identity.
+     The mark in front is the logo's three rising bars, in the logo's three oranges. */
   .eyebrow {
-    @apply inline-flex items-center gap-2.5 text-[0.8125rem] font-medium uppercase tracking-[0.16em] text-orange-500;
+    @apply inline-flex items-center gap-3 text-[0.8125rem] font-medium uppercase tracking-[0.16em] text-orange-500;
   }
   .eyebrow::before {
     content: "";
-    @apply h-px w-6 bg-orange-500/70;
+    @apply h-[14px] w-[18px] shrink-0;
+    background-image: linear-gradient(#e07b00, #e07b00), linear-gradient(#ff9800, #ff9800),
+      linear-gradient(#ffc470, #ffc470);
+    background-size:
+      4px 8px,
+      4px 11px,
+      4px 14px;
+    background-position:
+      0 100%,
+      7px 100%,
+      14px 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* The logo's three bars, standalone (footer, 404, empty states). */
+  .brand-bars {
+    @apply inline-block h-9 w-[46px];
+    background-image: linear-gradient(#e07b00, #e07b00), linear-gradient(#ff9800, #ff9800),
+      linear-gradient(#ffc470, #ffc470);
+    background-size:
+      10px 20px,
+      10px 28px,
+      10px 36px;
+    background-position:
+      0 100%,
+      18px 100%,
+      36px 100%;
+    background-repeat: no-repeat;
   }
 
   /* Inline text link in body copy. */
@@ -181,6 +209,51 @@
       linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
       linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
     background-size: 64px 64px;
+  }
+
+  /* A tiled wall in running bond: rectangles with a hair of grout between them, in two
+     barely different tones so it reads as kakel rather than graph paper. */
+  .tile-wall {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='80'%3E%3Cg fill='%23fff'%3E%3Crect x='1' y='1' width='78' height='38' rx='1.5' fill-opacity='0.028'/%3E%3Crect x='81' y='1' width='78' height='38' rx='1.5' fill-opacity='0.04'/%3E%3Crect x='-39' y='41' width='78' height='38' rx='1.5' fill-opacity='0.04'/%3E%3Crect x='41' y='41' width='78' height='38' rx='1.5' fill-opacity='0.022'/%3E%3Crect x='121' y='41' width='78' height='38' rx='1.5' fill-opacity='0.036'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 160px 80px;
+  }
+
+  /* The van livery: a dark panel whose left edge is cut on a slant. Applied to hero
+     images from the large breakpoint, where there is room for the shape to read. */
+  @media (min-width: 1024px) {
+    .cut-left {
+      clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%);
+      border-radius: 0;
+    }
+  }
+
+  /* Three vertical bars on the right edge of a dark panel, like the back of the van. */
+  .livery::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 46px;
+    pointer-events: none;
+    background-image: linear-gradient(#e07b00, #e07b00), linear-gradient(#ff9800, #ff9800),
+      linear-gradient(#ffc470, #ffc470);
+    background-size:
+      8px 100%,
+      8px 100%,
+      8px 100%;
+    background-position:
+      0 0,
+      16px 0,
+      32px 0;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    transform: skewX(-8deg);
+    transform-origin: top right;
+  }
+  /* At the viewport edge the bars need the margin outside the content container. */
+  @media (max-width: 1439px) {
+    .livery-edge::after {
+      display: none;
+    }
   }
 
   /* Scroll-driven reveal; progressive enhancement, no JS. */

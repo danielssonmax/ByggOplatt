@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, ArrowUpRight, ChevronRight, Plus } from "lucide-react"
 import { BUSINESS_ID, JsonLd, breadcrumbSchema } from "@/components/json-ld"
+import { AreaMap } from "@/components/area-map"
 import { CITY_INFO } from "@/lib/cities"
 import { projectsFor } from "@/lib/projects"
 import { SITE } from "@/lib/site"
@@ -102,7 +103,7 @@ export function ServiceHubPage(props: ServiceHubPageProps) {
       <section className="relative isolate overflow-hidden pt-24">
         <div
           aria-hidden
-          className="tile-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_70%_60%_at_25%_30%,#000_25%,transparent_75%)]"
+          className="tile-wall absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_70%_60%_at_25%_30%,#000_25%,transparent_75%)]"
         />
         <div
           aria-hidden
@@ -157,7 +158,7 @@ export function ServiceHubPage(props: ServiceHubPageProps) {
           {/* No entry animation here: the image is the LCP element. */}
           <div className="relative lg:col-span-5">
             {heroImage ? (
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[1.75rem] ring-1 ring-white/10 lg:aspect-[4/5]">
+              <div className="cut-left relative aspect-[4/3] overflow-hidden rounded-[1.75rem] ring-1 ring-white/10 lg:aspect-[4/5]">
                 <Image
                   src={heroImage.src}
                   alt={heroImage.alt}
@@ -169,7 +170,7 @@ export function ServiceHubPage(props: ServiceHubPageProps) {
               </div>
             ) : (
               <div className="surface relative overflow-hidden p-8 md:p-10">
-                <div aria-hidden className="tile-grid absolute inset-0 opacity-60" />
+                <div aria-hidden className="tile-wall absolute inset-0 opacity-60" />
                 <p className="relative text-sm font-medium text-ink-400">{featuresEyebrow}</p>
                 <ul className="relative mt-6 divide-y divide-white/[0.06]">
                   {features.map((f, i) => (
@@ -263,13 +264,16 @@ export function ServiceHubPage(props: ServiceHubPageProps) {
 
       {/* ───────────── Towns ───────────── */}
       <section aria-labelledby="orter-rubrik" className="border-y border-white/[0.06] bg-ink-950">
-        <div className="container-site grid gap-12 py-24 md:py-28 lg:grid-cols-[1fr_1.6fr] lg:gap-20">
+        <div className="container-site grid gap-12 py-24 md:py-28 lg:grid-cols-[1fr_1.15fr_1fr] lg:items-start lg:gap-12">
           <div>
             <p className="eyebrow">Här jobbar vi</p>
             <h2 id="orter-rubrik" className="mt-5 text-3xl font-bold leading-[1.05] tracking-tight text-white md:text-[2.75rem]">
               Sju orter i Sörmland och Västmanland<span className="text-orange-500">.</span>
             </h2>
             <p className="mt-6 max-w-prose leading-relaxed text-ink-300">{townsIntro}</p>
+          </div>
+          <div className="surface self-start p-5">
+            <AreaMap />
           </div>
           <ul className="divide-y divide-white/[0.06] self-start border-y border-white/[0.06]">
             {towns.map((t) => {
@@ -396,7 +400,7 @@ export function ServiceHubPage(props: ServiceHubPageProps) {
       {/* ───────────── CTA ───────────── */}
       <section aria-labelledby="cta-rubrik" className="container-site pb-24 md:pb-32">
         <div className="relative isolate overflow-hidden rounded-[2rem] bg-ink-950 px-8 py-16 ring-1 ring-white/[0.08] md:px-16 md:py-20">
-          <div aria-hidden className="tile-grid absolute inset-0 -z-10 opacity-70" />
+          <div aria-hidden className="tile-wall absolute inset-0 -z-10 opacity-70" />
           <div
             aria-hidden
             className="absolute -right-24 -top-24 -z-10 h-80 w-80 rounded-full bg-glacier-400/[0.12] blur-[100px]"

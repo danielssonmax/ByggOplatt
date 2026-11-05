@@ -126,7 +126,7 @@ export default function Samarbeten() {
       <section className="relative isolate overflow-hidden pt-24">
         <div
           aria-hidden
-          className="tile-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_70%_70%_at_20%_20%,#000_25%,transparent_70%)]"
+          className="tile-wall absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_70%_70%_at_20%_20%,#000_25%,transparent_70%)]"
         />
         <div className="container-site grid gap-10 pb-16 pt-12 md:pb-20 md:pt-16 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-7">

@@ -35,7 +35,7 @@ export default function About() {
       <section className="relative isolate overflow-hidden pt-24">
         <div
           aria-hidden
-          className="tile-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_70%_60%_at_70%_30%,#000_25%,transparent_70%)]"
+          className="tile-wall absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_70%_60%_at_70%_30%,#000_25%,transparent_70%)]"
         />
         <div
           aria-hidden

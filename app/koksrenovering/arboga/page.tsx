@@ -4,14 +4,14 @@ import { ServiceCityPage } from "@/components/service-city-page"
 export const metadata: Metadata = {
   title: "Köksrenovering i Arboga",
   description:
-    "Professionell köksrenovering i Arboga. Komplett renovering med VVS, el, plattsättning och montering. Skräddarsydda lösningar. Begär offert!",
+    "Köksrenovering i Arboga, i den medeltida stadskärnans trä- och stenhus och i husen utanför. Sneda golv och gamla stammar är vardag för oss. Fast pris.",
   alternates: {
     canonical: "https://byggoplattsattning.se/koksrenovering/arboga",
   },
   openGraph: {
     title: "Köksrenovering Arboga | Bygg & Plattsättning",
     description:
-      "Professionell köksrenovering i Arboga. Komplett renovering med VVS, el, plattsättning och montering av köksinredning.",
+      "Köksrenovering i Arboga med rivning, VVS, el, kakel och montering. Knappt 40 minuter från vår bas i Eskilstuna längs E20, med fast pris och en kontaktperson.",
     url: "https://byggoplattsattning.se/koksrenovering/arboga",
     type: "website",
     siteName: "Bygg & Plattsättning",
@@ -26,12 +26,12 @@ export default function KoksrenoveringArboga() {
       serviceName="Köksrenovering"
       cityName="Arboga"
       heroTitle="Köksrenovering i Arboga"
-      heroDescription="Köket är hemmets hjärta – platsen där familjen samlas och vardagen tar plats. Vi hjälper dig att skapa ett modernt, funktionellt och personligt kök som passar din livsstil. Från planering till färdig installation tar vi hand om hela processen."
-      introTitle="Professionell Köksrenovering i Arboga"
+      heroDescription="Arboga har kvar sin medeltida gatustruktur, med trä- och stenhus längs ån som har haft kök i flera hundra år. Vi renoverar kök i gamla hus där inget är rakt och i yngre hus där installationerna hunnit bli gamla, och kommer längs E20 från vår bas i Eskilstuna på knappt 40 minuter."
+      introTitle="Kök i en stadskärna med medeltida gator"
       introContent={[
-        "Att renovera köket är en investering i både hemmet och livskvaliteten. Med rätt planering och kunniga hantverkare kan du förvandla ditt gamla kök till ett modernt, personligt och funktionellt rum som passar din stil.",
-        "Vi hjälper dig genom hela processen – från inspiration och planering till färdig köksrenovering i Arboga. Tillsammans skapar vi ett kök som kombinerar smart förvaring, snygg design och hållbara material.",
-        "Som totalentreprenör koordinerar vi alla hantverkare och ser till att din köksrenovering går smidigt. Du har en kontaktperson genom hela projektet och vi håller dig uppdaterad varje steg på vägen.",
+        "Arboga blev stad på 1200-talet, och stadskärnan har kvar sin medeltida gatustruktur. Längs Arbogaån, till exempel i kvarteret Kungsgården vid Gamla bron, står äldre trä- och stenhus där golven lutar, väggarna buktar och takhöjden varierar från rum till rum. Ett nytt kök i ett sådant hus börjar med måttband och vattenpass, inte med en katalog.",
+        "I äldre hus är vatten- och avloppsstammarna ofta bytta i omgångar, av olika ägare och i olika material. Innan vi lämnar offert vill vi därför se vad som sitter bakom skåpen och under golvet. Det tar en extra timme vid platsbesöket, men det betyder att det fasta priset täcker det kök som ska byggas, och att inga överraskningar dyker upp när rivningen är gjord.",
+        "Husen utanför stadskärnan är yngre, men många kök där har kvar el och ventilation från byggåret. Där lägger vi tyngdpunkten på installationerna: en egen grupp till induktionshällen, rätt sorts fläkt för husets ventilation och nya avlopp till diskmaskinen. Rivning, VVS och el, stänkskydd, montering, vitvaror och målning ingår, med en kontaktperson.",
       ]}
       features={[
         {
@@ -66,14 +66,33 @@ export default function KoksrenoveringArboga() {
         },
       ]}
       whyChooseUsContent={[
-        "Över 20 års erfarenhet av köksrenoveringar i Arboga. Vi har hjälpt hundratals kunder skapa sina drömkök.",
-        "Totalentreprenad med en kontaktperson. Du slipper koordinera olika hantverkare – vi tar hand om allt från start till mål.",
-        "Skräddarsydda lösningar efter dina behov och önskemål. Vi lyssnar på dina idéer och hjälper dig förverkliga din vision.",
-        "Fast pris och tydlig offert utan överraskningar. Du vet exakt vad köksrenoveringen kommer att kosta innan vi börjar.",
+        "Gamla hus är vår vardag. Vi flytspacklar golv som lutar, bygger ut skåpstommar mot bulliga väggar och anpassar överskåp till tak som inte är lika höga i hela rummet, så att köket ser rakt ut även när huset inte är det.",
+        "Du får en kontaktperson som håller ihop rörmokare, elektriker, plattsättare och målare, och som svarar när du undrar var i tidplanen vi är.",
+        "Arboga ligger vid E20, cirka 44 kilometer och knappt 40 minuter från Kyrkogatan i Eskilstuna. Vi lägger jobb här i sammanhängande dagar och planerar material så att inget väntar på en bil.",
+        "Priset är fast och räknas efter platsbesök. I de äldre husen längs ån ingår det vi hittar bakom skåpen i offerten, inte i en tilläggsfaktura.",
       ]}
-      ctaTitle="Redo att renovera köket i Arboga?"
-      ctaDescription="Kontakta oss idag för en kostnadsfri offert på din köksrenovering. Vi hjälper dig skapa ett kök du älskar."
+      ctaTitle="Nytt kök i ett gammalt hus i Arboga?"
+      ctaDescription="Skicka några rader om huset och köket, gärna med en bild, så bokar vi ett platsbesök. Du får ett fast pris, och offerten kostar ingenting."
       heroImage="/hero-image.jpg"
+      localTitle="Köksrenovering i Arboga, där inget hus är det andra likt"
+      localContent={[
+        "Arboga ligger i Västmanlands län, där E18 och E20 möts, och vägen från vår bas i Eskilstuna följer E20 hela vägen. Knappt 40 minuter är ett avstånd som fungerar bra för hela arbetsdagar, och vi samordnar leveranser av kakel, inredning och vitvaror så att de kommer när momentet börjar. Bygglov och anmälningar handläggs av Arboga kommun, och i den gamla stadskärnan kan kommunen ställa särskilda krav på ändringar som syns utifrån.",
+        "Staden är känd för Arboga möte 1435 och Hjälmare kanal från 1639, men för oss är det husen som är intressanta. Trähusen och stenhusen längs ån har byggts om i omgångar under århundraden, och varje kök bär spår av de tidigare ägarnas lösningar. Vi tar reda på vad som sitter i väggarna innan rivningen, så att det nya köket får rätt förutsättningar i stället för att ärva de gamla problemen.",
+      ]}
+      localFaq={[
+        {
+          q: "Golvet i vårt kök lutar. Kan ni ändå sätta in ett nytt kök?",
+          a: "Ja. Hur vi gör beror på hur mycket det lutar. Några centimeter över kökets längd löser vi med flytspackel, som ger ett plant underlag för skåp och golv. Lutar det mer, eller om bjälklaget sviktar, reglar vi upp ett nytt golv. Vi mäter vid platsbesöket, och metoden ingår i det fasta priset.",
+        },
+        {
+          q: "Vi bor i ett gammalt hus nära Gamla bron i Arboga. Får vi ändra köket som vi vill?",
+          a: "Inne i köket, ja. Begränsningarna gäller i första hand husets yttre, som fönster och fasad, där kommunen kan ha synpunkter i en äldre stadskärna. Ska ni flytta köket till ett annat rum eller ändra avlopp och ventilation kan det krävas en anmälan, och vi hjälper er att ta reda på vad som gäller för just ert hus.",
+        },
+        {
+          q: "Hur fungerar rotavdraget om vi är två som äger huset?",
+          a: "Då kan ni båda använda ert avdrag. Rotavdraget är 30 procent av arbetskostnaden, högst 50 000 kronor per person och år 2026, så ett hushåll med två ägare kan få avdrag på upp till 100 000 kronor om arbetskostnaden räcker till det. Vi delar upp fakturan efter hur ni vill fördela avdraget och sköter ansökan.",
+        },
+      ]}
     />
   )
 }

@@ -4,14 +4,14 @@ import { ServiceCityPage } from "@/components/service-city-page"
 export const metadata: Metadata = {
   title: "Badrumsrenovering i Arboga",
   description:
-    "Professionell badrumsrenovering i Arboga. Vi erbjuder totalentreprenad med tätskikt, plattsättning, VVS och el. Behörig våtrum. Begär offert idag!",
+    "Badrumsrenovering i Arboga, i den medeltida stadskärnans trähus och i nyare villor. Behörig våtrum, fast pris, knappt 40 minuter från vår bas längs E20.",
   alternates: {
     canonical: "https://byggoplattsattning.se/badrumsrenovering/arboga",
   },
   openGraph: {
     title: "Badrumsrenovering Arboga | Bygg & Plattsättning",
     description:
-      "Professionell badrumsrenovering i Arboga med totalentreprenad. Behörig våtrum, tätskikt och plattsättning.",
+      "Nytt badrum i Arboga: förarbete i äldre hus, golvbrunn, tätskikt enligt branschregler, VVS, el och plattsättning. Kostnadsfri offert med fast pris.",
     url: "https://byggoplattsattning.se/badrumsrenovering/arboga",
     type: "website",
     siteName: "Bygg & Plattsättning",
@@ -26,12 +26,12 @@ export default function BadrumsrenoveringArboga() {
       serviceName="Badrumsrenovering"
       cityName="Arboga"
       heroTitle="Badrumsrenovering i Arboga"
-      heroDescription="Är det dags att renovera badrummet i Arboga? Vi erbjuder professionell badrumsrenovering med totalentreprenad där du som kund endast har en kontakt genom hela projektet. Med vårt digitala ritverktyg kan du enkelt planera och anpassa ditt nya badrum."
-      introTitle="Professionell Badrumsrenovering i Arboga"
+      heroDescription="Arbogas stadskärna har kvar sin medeltida gatustruktur, och husen längs ån har stått i flera hundra år. Att bygga ett badrum i ett sådant hus är ett annat jobb än i en villa från 1970, och vi gör båda, knappt 40 minuter från vår bas längs E20."
+      introTitle="Badrum i en av Sveriges äldsta stadskärnor"
       introContent={[
-        "Vi arbetar med såväl nyproduktion som renoveringar av badrum i Arboga. Vi finns med hela vägen från planering till färdigställande – oavsett om det gäller en omfattande ombyggnation eller en enklare badrumsrenovering.",
-        "Vi kan tillhandahålla totalentreprenad där du som kund endast har en kontakt genom hela projektet. Vi sköter all kommunikation mellan alla olika involverade yrkesgrupper så att din badrumsrenovering i Arboga går så smidigt som möjligt.",
-        "Genom våra samarbetspartners kan vi erbjuda kompletta paketlösningar där allting ingår till hela din badrumsrenovering – från kakel och klinker till badrumsinredning och sanitetsporslin.",
+        "Arboga var stad redan på 1200-talet, höll Sveriges första riksdag 1435 och har kvar en stadskärna där gatorna följer medeltidens mönster. Längs Arbogaån, till exempel i kvarteret Kungsgården vid Gamla bron, står trä- och stenhus som renoverats många gånger om. I de husen är golven sällan i våg, väggarna inte vinkelräta och rören bytta i omgångar, vilket vi tar med i beräkningen från första platsbesöket.",
+        "Ett badrum i ett sådant hus kräver mer förarbete än ett i en nyare villa: golvet riktas upp, bjälklaget förstärks där det behövs och tätskiktssystemet väljs för att tåla rörelser i stommen. Själva våtrummet byggs sedan enligt Byggkeramikrådets branschregler precis som i ett nytt hus, med golvbrunn, tätskikt, plattsättning och dokumentation. Vi tar också VVS och el i samma entreprenad.",
+        "Vi når Arboga västerut på E20, 44 kilometer och ungefär 37 minuter från Kyrkogatan i Eskilstuna. Arbetet planeras i sammanhängande veckor med samma lag på plats, och du har en kontaktperson från offert till slutbesiktning. Offerten är gratis, och summan i den är den du betalar.",
       ]}
       features={[
         {
@@ -66,13 +66,32 @@ export default function BadrumsrenoveringArboga() {
         },
       ]}
       whyChooseUsContent={[
-        "Över 20 års erfarenhet av badrumsrenoveringar i Arboga med omnejd. Vi har genomfört hundratals projekt och vet vad som krävs för ett perfekt resultat.",
-        "Behörig våtrum enligt Byggkeramikrådets och Säker Vattens krav. Du kan känna dig trygg med att ditt badrum byggs enligt alla gällande normer.",
-        "Totalentreprenad med en kontaktperson genom hela projektet. Du slipper koordinera olika hantverkare – vi tar hand om allt.",
-        "Fast pris och tydlig offert utan dolda kostnader. Du vet exakt vad din badrumsrenovering kommer att kosta innan vi börjar.",
+        "Knappt 40 minuter längs E20 från vår bas, i raka spåret. Vi är på plats varje arbetsdag under renoveringen.",
+        "Vi är ett behörigt företag enligt Byggkeramikrådets och Säker Vattens regler, och tätskiktet dokumenteras med ett kvalitetsdokument som du behåller.",
+        "Vi kan gamla hus. I Arbogas stadskärna räknar vi med sneda golv, bytta stammar och oväntade konstruktioner redan i offerten, i stället för att komma tillbaka med tillägg.",
+        "Fast pris och en kontaktperson. Du får en tidplan på tre till fyra veckor och en person som svarar på frågorna längs vägen.",
       ]}
-      ctaTitle="Redo att renovera ditt badrum i Arboga?"
-      ctaDescription="Kontakta oss idag för en kostnadsfri offert på din badrumsrenovering. Vi hjälper dig förverkliga ditt drömadrum."
+      ctaTitle="Nytt badrum i Arboga, i gammalt hus eller nytt"
+      ctaDescription="Berätta vilket hus du bor i och vad du vill göra med badrummet. Vi bokar ett platsbesök och lämnar kostnadsfri offert med fast pris."
+      localTitle="Så tar vi oss an badrum i Arboga"
+      localContent={[
+        "Platsbesöket i Arboga är viktigare än på många andra orter, eftersom husen i stadskärnan sällan ser likadana ut inuti som utanpå. Vi mäter, kontrollerar bjälklag och ventilation och tittar på hur vatten och avlopp är draget. Därefter får du en offert där förarbetet i ett äldre hus är specificerat, så att du ser vad som är badrum och vad som är hus.",
+        "En invändig badrumsrenovering kräver normalt inget bygglov i Arboga kommun, men i äldre hus kan en anmälan behövas om bärande delar, ventilation eller vatten och avlopp ändras. Bor du i bostadsrätt gäller föreningens regler för våtrum. Vi arbetar i hela veckor i Arboga, med material levererat före rivning, så att tidplanen inte påverkas av resorna.",
+      ]}
+      localFaq={[
+        {
+          q: "Kan man bygga ett badrum enligt dagens regler i ett hus från 1700- eller 1800-talet i Arboga?",
+          a: "Ja. Reglerna för tätskikt och golvbrunn gäller oavsett husets ålder, och de går att uppfylla även i en gammal trästomme med rätt förarbete. Skillnaden är att golvet oftast måste riktas upp och att systemet ska tåla rörelser.",
+        },
+        {
+          q: "Hur många veckor är vi utan badrum i Arboga?",
+          a: "Tre till fyra veckor är normalt. I ett äldre hus kan förarbetet lägga till några dagar, vilket vi anger i tidplanen från början. Vi är på plats alla arbetsdagar eftersom jobbet planeras som hela veckor.",
+        },
+        {
+          q: "Ingår resorna från Eskilstuna i priset?",
+          a: "Ja. Det fasta priset i offerten täcker resorna längs E20, och det ändras inte för att vi kommer från en annan ort. Rotavdraget på 30 procent av arbetskostnaden drar vi av direkt på fakturan om du är berättigad.",
+        },
+      ]}
       heroImage="/service-bathroom-1.webp"
       secondaryImage="/service-bathroom-2.webp"
     />

@@ -12,7 +12,7 @@ export default function NotFound() {
     <main className="relative isolate overflow-hidden pt-24">
       <div
         aria-hidden
-        className="tile-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_60%_60%_at_30%_40%,#000_25%,transparent_70%)]"
+        className="tile-wall absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_60%_60%_at_30%_40%,#000_25%,transparent_70%)]"
       />
       <div className="container-site grid min-h-[70dvh] items-center gap-12 py-16 md:grid-cols-[auto_1fr] md:gap-20">
         <p
@@ -22,7 +22,8 @@ export default function NotFound() {
           404
         </p>
         <div className="max-w-xl">
-          <h1 className="animate-rise text-4xl font-bold leading-[1.02] tracking-tight text-white [animation-delay:80ms] md:text-6xl">
+          <span aria-hidden className="brand-bars animate-rise" />
+          <h1 className="mt-6 animate-rise text-4xl font-bold leading-[1.02] tracking-tight text-white [animation-delay:80ms] md:text-6xl">
             Sidan hittades inte<span className="text-orange-500">.</span>
           </h1>
           <p className="mt-6 animate-rise text-lg leading-relaxed text-ink-300 [animation-delay:160ms]">

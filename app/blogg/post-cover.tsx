@@ -42,7 +42,7 @@ export function PostCover({
 
   return (
     <div aria-hidden className={cn("relative isolate overflow-hidden bg-ink-850", className)}>
-      <div className="tile-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_80%_80%_at_70%_20%,#000_20%,transparent_75%)]" />
+      <div className="tile-wall absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_80%_80%_at_70%_20%,#000_20%,transparent_75%)]" />
       <div className="absolute -right-16 -top-16 -z-10 h-56 w-56 rounded-full bg-orange-500/10 blur-3xl" />
       <div className="flex h-full flex-col justify-end p-6 md:p-8">
         <span className="font-display text-[clamp(1.75rem,4vw,3rem)] font-extrabold leading-none tracking-tight text-white/[0.09] transition-colors duration-500 group-hover:text-white/[0.14]">

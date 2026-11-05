@@ -4,14 +4,14 @@ import { ServiceCityPage } from "@/components/service-city-page"
 export const metadata: Metadata = {
   title: "Plattsättare i Västerås",
   description:
-    "Professionell plattsättning i Västerås. Kakel, klinker, mosaik och natursten. Tätskikt enligt branschregler. Erfarna plattsättare. Begär offert!",
+    "Plattsättare i Västerås: badrum i Bäckby, Råby och Vallby, kök på Kyrkbacken och nya lägenheter på Lillåudden. Behörigt våtrum, storformat och fast pris.",
   alternates: {
     canonical: "https://byggoplattsattning.se/plattsattning/vasteras",
   },
   openGraph: {
     title: "Plattsättning Västerås | Bygg & Plattsättning",
     description:
-      "Professionell plattsättning i Västerås. Kakel, klinker, mosaik och natursten med tätskikt enligt branschregler.",
+      "Plattsättare i Västerås: badrum i Bäckby, Råby och Vallby, kök på Kyrkbacken och nya lägenheter på Lillåudden. Behörigt våtrum, storformat och fast pris.",
     url: "https://byggoplattsattning.se/plattsattning/vasteras",
     type: "website",
     siteName: "Bygg & Plattsättning",
@@ -26,12 +26,12 @@ export default function PlattsattningVasteras() {
       serviceName="Plattsättning"
       cityName="Västerås"
       heroTitle="Plattsättning i Västerås"
-      heroDescription="Letar du efter en erfaren plattsättare i Västerås? Vi utför professionell plattsättning av kakel, klinker, mosaik och natursten för alla typer av utrymmen. Med vår expertis och noggrannhet säkerställer vi att resultatet blir både vackert och hållbart."
-      introTitle="Professionell Plattsättning i Västerås"
+      heroDescription="Västerås är Sveriges sjätte största tätort, och en stor del av husen här byggdes under 1960-talet när staden växte med över 20 000 invånare på tio år. Vi kör hit på drygt 40 minuter från Eskilstuna och sätter kakel och klinker i allt från lägenheterna i Bäckby till de nya husen vid Mälaren."
+      introTitle="Plattsättning i en stad som byggdes på 1960-talet"
       introContent={[
-        "Vi är specialister på plattsättning i Västerås och utför arbeten i både våtrum och torra utrymmen. Oavsett om det gäller ett badrum, kök, hall eller utomhusyta kan du lita på oss för ett professionellt resultat.",
-        "Våra plattsättare har lång erfarenhet och arbetar alltid enligt Byggkeramikrådets branschregler. Vi är behöriga för våtrumsarbeten och kan därför garantera att tätskikt och plattsättning utförs korrekt.",
-        "Vi hjälper dig genom hela processen – från val av kakel och klinker till färdig installation. Med vårt öga för detaljer och känsla för design skapar vi resultat som både ser fantastiskt ut och håller i många år.",
+        "Mellan 1960 och 1970 ökade Västerås folkmängd från 76 000 till nästan 100 000, och under samma år byggdes Bäckby, Råby, Vallby och Viksäng. Samtidigt förnyades centrum i den stora citysaneringen. Resultatet är att en mycket stor del av stadens badrum och kök sitter i hus med betongbjälklag från den tiden, där det ursprungliga kaklet och tätskiktet ofta har passerat sin tekniska livslängd.",
+        "Betongunderlag är tacksamma för en plattsättare. De är stumma och plana, och storformatsplattor i 60 x 60 eller 60 x 120 cm kan läggas med tunna fogar. Men badrummen från den här tiden har ofta gjutna golv utan fall och golvbrunnar som behöver bytas. Vi bygger upp nytt fall mot brunnen, lägger tätskikt enligt Byggkeramikrådets branschregler och är behöriga för våtrum enligt kraven från Byggkeramikrådet och Säker Vatten.",
+        "I de nya bostadsområdena vid vattnet, som Lillåudden och Öster Mälarstrand, är förutsättningarna moderna, men också där vill många byta till en annan stil än den som byggaren valde. Och i Kyrkbackens trähus nedanför domkyrkan gäller samma regler som i andra gamla hus: små format, noggrann spackling och respekt för att stommen rör sig.",
       ]}
       features={[
         {
@@ -66,13 +66,32 @@ export default function PlattsattningVasteras() {
         },
       ]}
       whyChooseUsContent={[
-        "Över 20 års erfarenhet av plattsättning i Västerås. Vi har utfört hundratals projekt och levererar alltid högsta kvalitet.",
-        "Behöriga för våtrumsarbeten enligt Byggkeramikrådets och Säker Vattens krav. Du kan känna dig trygg med att arbetet utförs korrekt.",
-        "Noggrannhet och känsla för detaljer i varje projekt. Vi är stolta över vårt hantverk och det syns i resultatet.",
-        "Konkurrenspristiga priser och tydliga offerter. Du vet alltid vad plattsättningen kommer att kosta innan vi börjar.",
+        "Vi kör till Västerås via riksväg 56 över Mälaren vid Kvicksund, ungefär 45 kilometer från vår bas. Det är ett avstånd vi är vana vid, och vi planerar arbetsdagarna så att vi är på plats hela dagar i stället för att åka fram och tillbaka.",
+        "Erfarenhet av badrum från 1960- och 70-talen. Vi vet hur de gjutna golven är uppbyggda, var stammarna brukar gå och hur man får ett riktigt fall mot brunnen i ett rum som aldrig hade något.",
+        "Vi är behöriga för våtrum enligt Byggkeramikrådets och Säker Vattens krav. I en bostadsrättsförening är det ofta ett krav för att få renovera badrummet, och vi lämnar dokumentation som styrelsen kan arkivera.",
+        "En kontaktperson och ett fast pris. Vi samordnar rörmokare och elektriker när det behövs, och du får veta totalkostnaden innan vi river det första kaklet.",
       ]}
-      ctaTitle="Behöver du en plattsättare i Västerås?"
-      ctaDescription="Kontakta oss idag för en kostnadsfri offert på din plattsättning. Vi hjälper dig skapa vackra och hållbara ytor."
+      ctaTitle="Nytt kakel i Västerås?"
+      ctaDescription="Beskriv huset och rummet, så återkommer vi med ett förslag på tid för platsbesök och därefter en offert med fast pris."
+      localTitle="Så lägger vi upp ett plattsättningsjobb i Västerås"
+      localContent={[
+        "Det första vi vill veta är vilket hus du bor i. Ett badrum i ett sextiotalshus i Råby planeras annorlunda än ett på Lillåudden från 2000-talet, och ett kök i ett trähus på Kyrkbacken är en tredje sak. Vid platsbesöket mäter vi upp, kontrollerar golvets fall och ser om det finns ett befintligt tätskikt som måste bort tillsammans med det gamla kaklet.",
+        "Bor du i bostadsrätt tar vi också reda på vad föreningen kräver. Många föreningar vill ha en anmälan och intyg på våtrumsbehörighet innan arbetet börjar. När det är klart får du en offert där varje moment har sitt eget pris, och vi bokar in dagarna i ett sammanhängande block så att badrummet är ur bruk så kort tid som möjligt.",
+      ]}
+      localFaq={[
+        {
+          q: "Bostadsrättsföreningen i Västerås kräver behörig våtrumsfirma. Uppfyller ni det?",
+          a: "Ja. Vi uppfyller kraven från Byggkeramikrådet och Säker Vatten för att bygga behöriga våtrum, och vi lämnar den dokumentation som föreningar brukar be om. Be gärna styrelsen precisera vad de vill ha, så skickar vi det innan arbetet börjar. Det brukar göra godkännandet snabbare.",
+        },
+        {
+          q: "Går det att lägga 60 x 120-plattor på golvet i en lägenhet från 1960-talet?",
+          a: "Oftast, ja. Betongbjälklagen i husen från den tiden är stabila, och det är just stumma underlag som storformat behöver. Det som krävs är att golvet först avjämnas så att det är helt plant och, i badrum, har rätt fall mot brunnen. Det räknar vi in i offerten.",
+        },
+        {
+          q: "Hur hanterar ni resan från Eskilstuna om något behöver kompletteras?",
+          a: "Vi planerar jobbet i Västerås som hela arbetsdagar och ser till att material och verktyg finns på plats från start. Små kompletteringar, som en extra låda kakel, hämtar vi på vägen. Restiden på drygt 40 minuter är inräknad i offerten, så den påverkar inte priset i efterhand.",
+        },
+      ]}
       heroImage="/service-bathroom-1.webp"
       secondaryImage="/service-bathroom-2.webp"
     />

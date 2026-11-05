@@ -40,6 +40,11 @@ export default function Header() {
           : "bg-transparent",
       )}
     >
+      {/* Livery stripe: the logo's three oranges along the very top edge. */}
+      <div
+        aria-hidden
+        className="h-[3px] w-full bg-[linear-gradient(90deg,#e07b00_0_34%,#ff9800_34%_67%,#ffc470_67%)]"
+      />
       <div className="container-site flex h-24 items-center justify-between gap-6">
         <Link href="/" className="relative -ml-1 flex shrink-0 items-center" aria-label={`${SITE.name}, till startsidan`}>
           <span className="relative block h-[76px] w-[76px]">

@@ -7,8 +7,9 @@ import { PROJECTS } from "@/lib/projects"
 export default function Footer() {
   return (
     <footer className="relative border-t border-white/[0.06] bg-ink-950 text-ink-300">
-      {/* Closing call to action */}
-      <div className="container-site grid gap-10 border-b border-white/[0.06] py-16 md:grid-cols-[1.4fr_1fr] md:items-end md:py-20">
+      {/* Closing call to action, with the van's three stripes on the right edge of the band */}
+      <div className="livery livery-edge relative border-b border-white/[0.06]">
+      <div className="container-site grid gap-10 py-16 md:grid-cols-[1.4fr_1fr] md:items-end md:py-20">
         <div>
           <p className="eyebrow">Kostnadsfri offert</p>
           <p className="mt-5 max-w-[18ch] font-display text-4xl font-bold leading-[1.02] tracking-tight text-white md:text-6xl">
@@ -24,6 +25,7 @@ export default function Footer() {
             {SITE.phoneDisplay}
           </a>
         </div>
+      </div>
       </div>
 
       <div className="container-site grid gap-12 py-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,3fr)]">

@@ -4,14 +4,14 @@ import { ServiceCityPage } from "@/components/service-city-page"
 export const metadata: Metadata = {
   title: "Badrumsrenovering i Västerås",
   description:
-    "Professionell badrumsrenovering i Västerås. Vi erbjuder totalentreprenad med tätskikt, plattsättning, VVS och el. Behörig våtrum. Begär offert idag!",
+    "Badrumsrenovering i Västerås, i lägenheter från 60-talet och nya hus vid Mälaren. Behörig våtrum, en kontaktperson och fast pris, 40 minuter från vår bas.",
   alternates: {
     canonical: "https://byggoplattsattning.se/badrumsrenovering/vasteras",
   },
   openGraph: {
     title: "Badrumsrenovering Västerås | Bygg & Plattsättning",
     description:
-      "Professionell badrumsrenovering i Västerås med totalentreprenad. Behörig våtrum, tätskikt och plattsättning.",
+      "Nytt badrum i Västerås: tätskikt enligt Byggkeramikrådets regler, VVS, el, plattsättning och intyg till föreningen. Kostnadsfri offert med fast pris.",
     url: "https://byggoplattsattning.se/badrumsrenovering/vasteras",
     type: "website",
     siteName: "Bygg & Plattsättning",
@@ -26,12 +26,12 @@ export default function BadrumsrenoveringVasteras() {
       serviceName="Badrumsrenovering"
       cityName="Västerås"
       heroTitle="Badrumsrenovering i Västerås"
-      heroDescription="Är det dags att renovera badrummet i Västerås? Vi erbjuder professionell badrumsrenovering med totalentreprenad där du som kund endast har en kontakt genom hela projektet. Med vårt digitala ritverktyg kan du enkelt planera och anpassa ditt nya badrum."
-      introTitle="Professionell Badrumsrenovering i Västerås"
+      heroDescription="Västerås är den största staden vi arbetar i, och de flesta badrum vi renoverar här ligger i lägenheter från 1960- och 70-talen eller i nyare hus vid Mälaren. Vi tar hela entreprenaden med en kontaktperson och behörighet för våtrum."
+      introTitle="Badrum i Sveriges sjätte största tätort"
       introContent={[
-        "Vi arbetar med såväl nyproduktion som renoveringar av badrum i Västerås. Vi finns med hela vägen från planering till färdigställande – oavsett om det gäller en omfattande ombyggnation eller en enklare badrumsrenovering.",
-        "Vi kan tillhandahålla totalentreprenad där du som kund endast har en kontakt genom hela projektet. Vi sköter all kommunikation mellan alla olika involverade yrkesgrupper så att din badrumsrenovering i Västerås går så smidigt som möjligt.",
-        "Genom våra samarbetspartners kan vi erbjuda kompletta paketlösningar där allting ingår till hela din badrumsrenovering – från kakel och klinker till badrumsinredning och sanitetsporslin.",
+        "Mellan 1960 och 1970 växte Västerås från 76 000 till nästan 100 000 invånare. Bäckby, Råby, Vallby och Viksäng byggdes under de åren, och samtidigt förnyades större delen av centrum genom citysaneringen. Resultatet är tiotusentals badrum med betongbjälklag, gjutjärnsbrunnar och ursprungliga eller en gång renoverade tätskikt. De är nu i den ålder där stambyten och badrumsrenoveringar står på föreningarnas och villaägarnas listor.",
+        "Vid vattnet har staden fått nya bostadsområden, som Lillåudden och Öster Mälarstrand. Badrummen där är byggda enligt moderna regler, och när vi renoverar handlar det oftare om nytt kakel, ny inredning eller en större dusch än om att rädda konstruktionen. Vi gör båda typerna av jobb, och offerten ser olika ut beroende på vilket hus du bor i.",
+        "Vi kör till Västerås över Kvicksund på riksväg 56, ungefär 45 kilometer och drygt 40 minuter från vår bas i Eskilstuna. Arbetet planeras så att samma lag är på plats hela veckan. Du har en kontaktperson från platsbesök till färdigt badrum, tätskiktet läggs enligt Byggkeramikrådets branschregler och priset är fast.",
       ]}
       features={[
         {
@@ -66,13 +66,32 @@ export default function BadrumsrenoveringVasteras() {
         },
       ]}
       whyChooseUsContent={[
-        "Över 20 års erfarenhet av badrumsrenoveringar i Västerås med omnejd. Vi har genomfört hundratals projekt och vet vad som krävs för ett perfekt resultat.",
-        "Behörig våtrum enligt Byggkeramikrådets och Säker Vattens krav. Du kan känna dig trygg med att ditt badrum byggs enligt alla gällande normer.",
-        "Totalentreprenad med en kontaktperson genom hela projektet. Du slipper koordinera olika hantverkare – vi tar hand om allt.",
-        "Fast pris och tydlig offert utan dolda kostnader. Du vet exakt vad din badrumsrenovering kommer att kosta innan vi börjar.",
+        "Vi är vana vid bostadsrätter från 1960- och 70-talen, med allt vad det innebär av föreningskrav, intyg och samordning med grannar kring vattenavstängning.",
+        "Drygt 40 minuter över Kvicksund från vår bas. Vi lägger arbetsveckorna i Västerås sammanhängande, så att rivning, tätskikt och plattsättning följer på varandra utan luckor.",
+        "Behörigt företag för våtrum enligt Byggkeramikrådet och Säker Vatten. Du får kvalitetsdokument att lämna till föreningen eller försäkringsbolaget.",
+        "Ett fast pris i en tydlig offert, och en kontaktperson i stället för tre hantverkare att jaga.",
       ]}
-      ctaTitle="Redo att renovera ditt badrum i Västerås?"
-      ctaDescription="Kontakta oss idag för en kostnadsfri offert på din badrumsrenovering. Vi hjälper dig förverkliga ditt drömadrum."
+      ctaTitle="Nytt badrum i Västerås med en kontaktperson"
+      ctaDescription="Skicka några rader om lägenheten eller huset och vad du vill göra. Vi bokar ett platsbesök och återkommer med kostnadsfri offert och fast pris."
+      localTitle="Så lägger vi upp ett badrumsjobb i Västerås"
+      localContent={[
+        "Eftersom resan tar drygt 40 minuter samlar vi platsbesöken i Västerås till samma dagar och lägger själva arbetet i sammanhängande veckor. Det gör att du får en tidplan där tätskiktets torktider, inte våra resor, bestämmer hur lång renoveringen blir. Material beställs och levereras till adressen innan rivningen börjar.",
+        "I bostadsrätt är det föreningen som avgör vad som får göras med stammar, golvbrunn och ventilation, och många föreningar i Västerås kräver intyg från ett behörigt företag. En invändig renovering kräver normalt inte bygglov från Västerås stad, men ändringar av bärande delar, ventilation eller vatten och avlopp kan behöva anmälas. Vi hjälper dig med vad som ska in till föreningen och kommunen.",
+      ]}
+      localFaq={[
+        {
+          q: "Jobbar ni i bostadsrättsföreningar i Västerås, till exempel i Bäckby eller Viksäng?",
+          a: "Ja. Lägenheterna från 1960- och 70-talen är en stor del av de badrum vi renoverar. Vi stämmer av med föreningen om stammar och vattenavstängning, lämnar de intyg som krävs och förlägger bullriga moment till tider som fungerar för grannarna.",
+        },
+        {
+          q: "Hur påverkar resan från Eskilstuna priset på en badrumsrenovering i Västerås?",
+          a: "Resorna ingår i det fasta priset, och eftersom vi planerar arbetet i hela veckor påverkar de tidplanen marginellt. Du får samma offert med rivning, tätskikt, VVS, el och plattsättning specificerat som en kund i Eskilstuna.",
+        },
+        {
+          q: "Vårt badrum på Lillåudden är från 2000-talet. Måste tätskiktet göras om om vi bara vill byta kakel?",
+          a: "Ja, i praktiken. När kaklet rivs förstörs tätskiktet under det, så ett nytt måste läggas enligt dagens branschregler. Däremot är underlaget i ett modernt hus ofta i bra skick, vilket gör jobbet kortare än i äldre hus.",
+        },
+      ]}
       heroImage="/service-bathroom-1.webp"
       secondaryImage="/service-bathroom-2.webp"
     />

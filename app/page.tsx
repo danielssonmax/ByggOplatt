@@ -3,6 +3,8 @@ import Link from "next/link"
 import { ArrowRight, ArrowUpRight, ShieldCheck } from "lucide-react"
 import type { Metadata } from "next"
 import { SITE } from "@/lib/site"
+import { CITY_LIST } from "@/lib/cities"
+import { AreaMap } from "@/components/area-map"
 
 export const metadata: Metadata = {
   title: {
@@ -41,7 +43,7 @@ export default function Home() {
     <main>
       {/* ───────────── Hero ───────────── */}
       <section className="relative isolate overflow-hidden pt-24">
-        <div aria-hidden className="tile-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_70%_60%_at_30%_30%,#000_30%,transparent_75%)]" />
+        <div aria-hidden className="tile-wall absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_70%_60%_at_30%_30%,#000_30%,transparent_75%)]" />
         <div
           aria-hidden
           className="absolute -left-40 top-10 -z-10 h-[520px] w-[520px] rounded-full bg-orange-500/[0.07] blur-[120px]"
@@ -91,7 +93,7 @@ export default function Home() {
 
           {/* No entry animation here: the image is the LCP element. */}
           <div className="relative lg:col-span-5">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] ring-1 ring-white/10 sm:aspect-[5/4] lg:aspect-[4/5]">
+            <div className="cut-left relative aspect-[4/5] overflow-hidden rounded-[1.75rem] ring-1 ring-white/10 sm:aspect-[5/4] lg:aspect-[4/5]">
               <Image
                 src="/hero-image.jpg"
                 alt="Bygg & Plattsättnings servicebil med logotyp och märkningen Behörig våtrum"
@@ -265,6 +267,38 @@ export default function Home() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* ───────────── Service area ───────────── */}
+      <section aria-labelledby="orter-rubrik" className="border-t border-white/[0.06] bg-ink-950">
+        <div className="container-site grid items-center gap-12 py-24 md:py-32 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+          <div>
+            <p className="eyebrow">Här jobbar vi</p>
+            <h2 id="orter-rubrik" className="mt-5 text-4xl font-bold leading-[1.02] tracking-tight text-white md:text-5xl">
+              Sju orter runt Mälaren<span className="text-orange-500">.</span>
+            </h2>
+            <p className="mt-6 max-w-prose leading-relaxed text-ink-300">
+              Vi utgår från Kyrkogatan i Eskilstuna. Torshälla ligger tolv minuter bort, Strängnäs en halvtimme, och
+              Västerås, Köping och Arboga runt fyrtio minuter. Katrineholm är längst bort, ungefär en timme.
+            </p>
+            <ul className="mt-8 flex flex-wrap gap-2.5">
+              {CITY_LIST.map((c) => (
+                <li key={c.slug}>
+                  <Link
+                    href={`/badrumsrenovering/${c.slug}`}
+                    className="inline-flex items-baseline gap-2 rounded-lg bg-ink-850 px-4 py-2.5 text-[0.9375rem] text-ink-200 ring-1 ring-white/[0.06] transition-colors hover:text-glacier-300 hover:ring-glacier-300/40"
+                  >
+                    {c.name}
+                    <span className="text-xs tabular-nums text-ink-500">{c.driveMin === 0 ? "bas" : `${c.driveMin} min`}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="surface p-6">
+            <AreaMap />
+          </div>
         </div>
       </section>
 
