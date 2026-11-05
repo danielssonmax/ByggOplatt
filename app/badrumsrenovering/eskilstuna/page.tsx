@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Badrumsrenovering Eskilstuna | Komplett Renovering av Badrum",
+  title: "Badrumsrenovering i Eskilstuna",
   description:
     "Professionell badrumsrenovering i Eskilstuna. Vi erbjuder totalentreprenad med tätskikt, plattsättning, VVS och el. Behörig våtrum. Begär offert idag!",
-  keywords: [
-    "badrumsrenovering eskilstuna",
-    "renovera badrum eskilstuna",
-    "badrum eskilstuna",
-    "plattsättare eskilstuna",
-    "kakel badrum eskilstuna",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/badrumsrenovering/eskilstuna",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell badrumsrenovering i Eskilstuna med totalentreprenad. Behörig våtrum, tätskikt och plattsättning.",
     url: "https://byggoplattsattning.se/badrumsrenovering/eskilstuna",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 

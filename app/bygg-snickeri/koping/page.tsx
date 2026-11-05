@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Snickare Köping | Bygg & Snickeri Proffs",
+  title: "Snickare & byggfirma i Köping",
   description:
     "Professionell snickare i Köping. Tillbyggnad, ombyggnad, fönsterbyte, altanbygge och köksrenovering. Erfarna hantverkare. Begär offert!",
-  keywords: [
-    "snickare köping",
-    "bygg köping",
-    "snickeri köping",
-    "tillbyggnad köping",
-    "ombyggnad köping",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/bygg-snickeri/koping",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell snickare i Köping. Tillbyggnad, ombyggnad, fönsterbyte och köksrenovering med erfarna hantverkare.",
     url: "https://byggoplattsattning.se/bygg-snickeri/koping",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/hero-image.jpg"],
   },
 }
 
@@ -77,8 +73,7 @@ export default function ByggSnickeriKoping() {
       ]}
       ctaTitle="Behöver du en snickare i Köping?"
       ctaDescription="Kontakta oss idag för en kostnadsfri offert på ditt byggprojekt. Vi hjälper dig förverkliga dina idéer."
-      heroImage="/service-bathroom-1.webp"
-      secondaryImage="/service-bathroom-2.webp"
+      heroImage="/hero-image.jpg"
     />
   )
 }

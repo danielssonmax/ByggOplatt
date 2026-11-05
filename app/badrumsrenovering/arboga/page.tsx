@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Badrumsrenovering Arboga | Komplett Renovering av Badrum",
+  title: "Badrumsrenovering i Arboga",
   description:
     "Professionell badrumsrenovering i Arboga. Vi erbjuder totalentreprenad med tätskikt, plattsättning, VVS och el. Behörig våtrum. Begär offert idag!",
-  keywords: [
-    "badrumsrenovering arboga",
-    "renovera badrum arboga",
-    "badrum arboga",
-    "plattsättare arboga",
-    "kakel badrum arboga",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/badrumsrenovering/arboga",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell badrumsrenovering i Arboga med totalentreprenad. Behörig våtrum, tätskikt och plattsättning.",
     url: "https://byggoplattsattning.se/badrumsrenovering/arboga",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 

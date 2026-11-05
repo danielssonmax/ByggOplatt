@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Köksrenovering Katrineholm | Renovera Kök Proffs",
+  title: "Köksrenovering i Katrineholm",
   description:
     "Professionell köksrenovering i Katrineholm. Komplett renovering med VVS, el, plattsättning och montering. Skräddarsydda lösningar. Begär offert!",
-  keywords: [
-    "köksrenovering katrineholm",
-    "renovera kök katrineholm",
-    "kök katrineholm",
-    "köksmontör katrineholm",
-    "nytt kök katrineholm",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/koksrenovering/katrineholm",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell köksrenovering i Katrineholm. Komplett renovering med VVS, el, plattsättning och montering av köksinredning.",
     url: "https://byggoplattsattning.se/koksrenovering/katrineholm",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/hero-image.jpg"],
   },
 }
 
@@ -77,8 +73,7 @@ export default function KoksrenoveringKatrineholm() {
       ]}
       ctaTitle="Redo att renovera köket i Katrineholm?"
       ctaDescription="Kontakta oss idag för en kostnadsfri offert på din köksrenovering. Vi hjälper dig skapa ett kök du älskar."
-      heroImage="/service-bathroom-1.webp"
-      secondaryImage="/service-bathroom-2.webp"
+      heroImage="/hero-image.jpg"
     />
   )
 }

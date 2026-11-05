@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Plattsättning Katrineholm | Kakel & Klinker Proffs",
+  title: "Plattsättare i Katrineholm",
   description:
     "Professionell plattsättning i Katrineholm. Kakel, klinker, mosaik och natursten. Tätskikt enligt branschregler. Erfarna plattsättare. Begär offert!",
-  keywords: [
-    "plattsättning katrineholm",
-    "plattsättare katrineholm",
-    "kakel katrineholm",
-    "klinker katrineholm",
-    "kakelsättare katrineholm",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/plattsattning/katrineholm",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell plattsättning i Katrineholm. Kakel, klinker, mosaik och natursten med tätskikt enligt branschregler.",
     url: "https://byggoplattsattning.se/plattsattning/katrineholm",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 

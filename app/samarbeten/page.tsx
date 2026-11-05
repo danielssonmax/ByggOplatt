@@ -1,390 +1,237 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Handshake, ExternalLink } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Våra samarbeten | Bygg & Plattsättning i Eskilstuna",
+  title: "Samarbetspartners",
   description:
     "Upptäck våra värdefulla samarbetspartners som hjälper oss leverera högkvalitativa tjänster inom bygg och plattsättning i Eskilstuna.",
   alternates: {
-    canonical: "https://byggoplattsattning.se/samarbeten",
+    canonical: "/samarbeten",
   },
 }
 
+type Partner = {
+  name: string
+  href: string
+  description: string
+  logo?: string
+  /** Logo has light artwork and needs a dark tile. */
+  logoOnDark?: boolean
+}
+
+const partners: Partner[] = [
+  {
+    name: "Aluns Motor",
+    href: "https://alunsmotor.se",
+    logo: "/aluns-motor-logo.png",
+    description:
+      "Aluns Motor är specialister på motorfordon och hjälper oss att hålla vår fordonsflotta i toppskick, vilket säkerställer att vi alltid kan nå våra kunder i tid.",
+  },
+  {
+    name: "Webbfix",
+    href: "https://webbfix.se",
+    logo: "/webbfix-logo.png",
+    logoOnDark: true,
+    description:
+      "Webbfix är vår digitala partner som hjälper oss med webbdesign och online-närvaro. De säkerställer att vi kan nå ut till våra kunder på bästa sätt genom digitala kanaler.",
+  },
+  {
+    name: "KonstruktBygg",
+    href: "https://konstruktbygg.se",
+    logo: "/konstruktbygg-logo.png",
+    description:
+      "KonstruktBygg är vår partner inom större byggprojekt. Tillsammans kan vi ta oss an mer omfattande bygguppdrag och erbjuda helhetslösningar för våra kunder.",
+  },
+  {
+    name: "Bostadscentralen",
+    href: "https://bostadscentralen.se",
+    description: "Leta bland tusentals bostäder samlade på ett och samma ställe.",
+  },
+  {
+    name: "Leasa begagnad bil",
+    href: "https://leasabegagnadbil.se",
+    // TODO: description copied from Bostadscentralen, needs real copy
+    description: "Leta bland tusentals bostäder samlade på ett och samma ställe.",
+  },
+  {
+    name: "Seiko Mod",
+    href: "https://seiko-mod.se",
+    description:
+      "Seiko Mod erbjuder högkvalitativa modifieringar och anpassningar av Seiko-klockor för entusiaster och samlare.",
+  },
+  {
+    name: "Jämför Mäklare",
+    href: "https://www.jamfor-maklare.se",
+    description:
+      "Jämför Mäklare hjälper dig att hitta rätt mäklare för din fastighetsaffär genom att jämföra olika alternativ och priser.",
+  },
+  {
+    name: "Bilverkstad Eskilstuna",
+    href: "https://www.bilverkstadeskilstuna.se",
+    description:
+      "Professionell bilverkstad i Eskilstuna som erbjuder service, reparationer och underhåll av alla bilmärken med hög kvalitet.",
+  },
+  {
+    name: "Törnstrand Elteknik AB",
+    href: "https://tornstrandelteknikab.se",
+    description:
+      "Törnstrand Elteknik AB är specialister på elinstallationer och elektriska tjänster för både privat- och företagskunder.",
+  },
+  {
+    name: "Dold Adress",
+    href: "https://www.dold-adress.se",
+    description:
+      "Dold Adress erbjuder tjänster för att skydda din personliga integritet och säkerhet genom diskreta adresslösningar.",
+  },
+  {
+    name: "Leap Marketing",
+    href: "https://www.leapmarketing.se",
+    description:
+      "Leap Marketing är en digital marknadsföringsbyrå som hjälper företag att växa genom strategisk marknadsföring och kreativa lösningar.",
+  },
+  {
+    name: "Fairing Sports Nutrition",
+    href: "https://fairing.se",
+    logo: "/fairing-logo.png",
+    description:
+      "Fairing är specialister på sportnäring och kosttillskott av högsta kvalitet. De erbjuder ett brett sortiment av produkter för träning, återhämtning och hälsa.",
+  },
+]
+
+const benefits = [
+  {
+    title: "Heltäckande lösningar",
+    text: "Genom våra samarbeten kan vi erbjuda mer heltäckande lösningar för dina bygg- och renoveringsprojekt, från planering till slutförande.",
+  },
+  {
+    title: "Expertis inom flera områden",
+    text: "Våra samarbetspartners bidrar med specialiserad expertis inom sina respektive områden, vilket säkerställer hög kvalitet i alla delar av ditt projekt.",
+  },
+  {
+    title: "Effektivare processer",
+    text: "Genom att samarbeta med etablerade partners kan vi effektivisera våra processer och leverera projekt snabbare utan att kompromissa med kvaliteten.",
+  },
+  {
+    title: "Lokala samarbeten",
+    text: "Vi prioriterar samarbeten med andra lokala företag för att stärka det lokala näringslivet och säkerställa snabb service för våra kunder.",
+  },
+]
+
 export default function Samarbeten() {
   return (
-    <main className="min-h-screen bg-zinc-900 text-white pt-24">
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
-          Våra samarbeten<span className="text-orange-500">.</span>
-        </h1>
-
-        <div className="w-56 h-1 bg-orange-500 mb-12 mx-auto"></div>
-
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <p className="mb-4">
-            På Bygg & Plattsättning tror vi på kraften i starka samarbeten. Genom att arbeta tillsammans med andra
-            företag kan vi erbjuda våra kunder bättre service och mer omfattande lösningar.
-          </p>
-          <p>
-            Här presenterar vi våra värdefulla samarbetspartners som hjälper oss att leverera högkvalitativa tjänster
-            inom bygg och plattsättning.
-          </p>
-        </div>
-
-        {/* Partners Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
-          {/* Partner 1 - Aluns Motor */}
-          <div className="bg-zinc-800 rounded-lg overflow-hidden">
-            <div className="p-6 flex flex-col items-center">
-              <div className="relative h-32 w-full mb-6">
-                <Image src="/aluns-motor-logo.png" alt="Aluns Motor" fill className="object-contain" />
-              </div>
-              <h2 className="text-2xl font-bold mb-4">Aluns Motor</h2>
-              <p className="text-center mb-6">
-                Aluns Motor är specialister på motorfordon och hjälper oss att hålla vår fordonsflotta i toppskick,
-                vilket säkerställer att vi alltid kan nå våra kunder i tid.
-              </p>
-              <Link
-                href="https://alunsmotor.se"
-                rel="dofollow"
-                className="flex items-center text-orange-500 hover:text-orange-400 transition-colors"
-                target="_blank"
-              >
-                Besök deras hemsida <ExternalLink size={16} className="ml-2" />
-              </Link>
-            </div>
+    <main>
+      {/* ───────────── Intro ───────────── */}
+      <section className="relative isolate overflow-hidden pt-24">
+        <div
+          aria-hidden
+          className="tile-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_70%_70%_at_20%_20%,#000_25%,transparent_70%)]"
+        />
+        <div className="container-site grid gap-10 pb-16 pt-12 md:pb-20 md:pt-16 lg:grid-cols-12 lg:items-end">
+          <div className="lg:col-span-7">
+            <p className="eyebrow animate-rise">Samarbeten</p>
+            <h1 className="mt-6 animate-rise text-[clamp(2.75rem,6.4vw,5.5rem)] font-extrabold leading-[0.95] tracking-[-0.03em] text-white [animation-delay:80ms]">
+              Våra samarbeten<span className="text-orange-500">.</span>
+            </h1>
           </div>
-
-          {/* Partner 2 - Webbfix */}
-          <div className="bg-zinc-800 rounded-lg overflow-hidden">
-            <div className="p-6 flex flex-col items-center">
-              <div className="relative h-32 w-full mb-6">
-                <Image src="/webbfix-logo.png" alt="Webbfix" fill className="object-contain" />
-              </div>
-              <h2 className="text-2xl font-bold mb-4">Webbfix</h2>
-              <p className="text-center mb-6">
-                Webbfix är vår digitala partner som hjälper oss med webbdesign och online-närvaro. De säkerställer att
-                vi kan nå ut till våra kunder på bästa sätt genom digitala kanaler.
-              </p>
-              <Link
-                href="https://webbfix.se"
-                rel="dofollow"
-                className="flex items-center text-orange-500 hover:text-orange-400 transition-colors"
-                target="_blank"
-              >
-                Besök deras hemsida <ExternalLink size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Partner 3 - KonstruktBygg */}
-          <div className="bg-zinc-800 rounded-lg overflow-hidden">
-            <div className="p-6 flex flex-col items-center">
-              <div className="relative h-32 w-full mb-6">
-                <Image src="/konstruktbygg-logo.png" alt="KonstruktBygg" fill className="object-contain" />
-              </div>
-              <h2 className="text-2xl font-bold mb-4">KonstruktBygg</h2>
-              <p className="text-center mb-6">
-                KonstruktBygg är vår partner inom större byggprojekt. Tillsammans kan vi ta oss an mer omfattande
-                bygguppdrag och erbjuda helhetslösningar för våra kunder.
-              </p>
-              <Link
-                href="https://konstruktbygg.se"
-                rel="dofollow"
-                className="flex items-center text-orange-500 hover:text-orange-400 transition-colors"
-                target="_blank"
-              >
-                Besök deras hemsida <ExternalLink size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Partner 4 - BC */}
-          <div className="bg-zinc-800 rounded-lg overflow-hidden">
-            <div className="p-6 flex flex-col items-center">
-              <div className="relative h-32 w-full mb-6">
-                <Image src="/placeholder.svg" alt="Bostadscentralen" fill className="object-contain" />
-              </div>
-              <h2 className="text-2xl font-bold mb-4">Bostadscentralen</h2>
-              <p className="text-center mb-6">Leta bland tusentals bostäder samlade på ett och samma ställe.</p>
-              <Link
-                href="https://bostadscentralen.se"
-                rel="dofollow"
-                className="flex items-center text-orange-500 hover:text-orange-400 transition-colors"
-                target="_blank"
-              >
-                Besök deras hemsida <ExternalLink size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Partner 4 - BC */}
-          <div className="bg-zinc-800 rounded-lg overflow-hidden">
-            <div className="p-6 flex flex-col items-center">
-              <div className="relative h-32 w-full mb-6">
-                <Image
-                  src="https://leasabegagnadbil.se/lovable-uploads/5854ff22-ab54-4b63-80be-4e65ed092c94.png"
-                  alt="Leasa begagnad bil"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <h2 className="text-2xl font-bold mb-4">Leasa begagnad bil</h2>
-              <p className="text-center mb-6">Leta bland tusentals bostäder samlade på ett och samma ställe.</p>
-              <Link
-                href="https://leasabegagnadbil.se"
-                rel="dofollow"
-                className="flex items-center text-orange-500 hover:text-orange-400 transition-colors"
-                target="_blank"
-              >
-                Besök deras hemsida <ExternalLink size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Partner 6 - Seiko Mod */}
-          <div className="bg-zinc-800 rounded-lg overflow-hidden">
-            <div className="p-6 flex flex-col items-center">
-              <div className="relative h-32 w-full mb-6">
-                <Image src="/placeholder.svg?height=100&width=200" alt="Seiko Mod" fill className="object-contain" />
-              </div>
-              <h2 className="text-2xl font-bold mb-4">Seiko Mod</h2>
-              <p className="text-center mb-6">
-                Seiko Mod erbjuder högkvalitativa modifieringar och anpassningar av Seiko-klockor för entusiaster och
-                samlare.
-              </p>
-              <Link
-                href="https://seiko-mod.se"
-                rel="dofollow"
-                className="flex items-center text-orange-500 hover:text-orange-400 transition-colors"
-                target="_blank"
-              >
-                Besök deras hemsida <ExternalLink size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Partner 7 - Jämför Mäklare */}
-          <div className="bg-zinc-800 rounded-lg overflow-hidden">
-            <div className="p-6 flex flex-col items-center">
-              <div className="relative h-32 w-full mb-6">
-                <Image
-                  src="/placeholder.svg?height=100&width=200"
-                  alt="Jämför Mäklare"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <h2 className="text-2xl font-bold mb-4">Jämför Mäklare</h2>
-              <p className="text-center mb-6">
-                Jämför Mäklare hjälper dig att hitta rätt mäklare för din fastighetsaffär genom att jämföra olika
-                alternativ och priser.
-              </p>
-              <Link
-                href="https://www.jamfor-maklare.se"
-                rel="dofollow"
-                className="flex items-center text-orange-500 hover:text-orange-400 transition-colors"
-                target="_blank"
-              >
-                Besök deras hemsida <ExternalLink size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Partner 8 - Bilverkstad Eskilstuna */}
-          <div className="bg-zinc-800 rounded-lg overflow-hidden">
-            <div className="p-6 flex flex-col items-center">
-              <div className="relative h-32 w-full mb-6">
-                <Image
-                  src="/placeholder.svg?height=100&width=200"
-                  alt="Bilverkstad Eskilstuna"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <h2 className="text-2xl font-bold mb-4">Bilverkstad Eskilstuna</h2>
-              <p className="text-center mb-6">
-                Professionell bilverkstad i Eskilstuna som erbjuder service, reparationer och underhåll av alla
-                bilmärken med hög kvalitet.
-              </p>
-              <Link
-                href="https://www.bilverkstadeskilstuna.se"
-                rel="dofollow"
-                className="flex items-center text-orange-500 hover:text-orange-400 transition-colors"
-                target="_blank"
-              >
-                Besök deras hemsida <ExternalLink size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Partner 9 - Törnstrand Elteknik AB */}
-          <div className="bg-zinc-800 rounded-lg overflow-hidden">
-            <div className="p-6 flex flex-col items-center">
-              <div className="relative h-32 w-full mb-6">
-                <Image
-                  src="/placeholder.svg?height=100&width=200"
-                  alt="Törnstrand Elteknik AB"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <h2 className="text-2xl font-bold mb-4">Törnstrand Elteknik AB</h2>
-              <p className="text-center mb-6">
-                Törnstrand Elteknik AB är specialister på elinstallationer och elektriska tjänster för både privat- och
-                företagskunder.
-              </p>
-              <Link
-                href="https://tornstrandelteknikab.se"
-                rel="dofollow"
-                className="flex items-center text-orange-500 hover:text-orange-400 transition-colors"
-                target="_blank"
-              >
-                Besök deras hemsida <ExternalLink size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Partner 10 - Dold Adress */}
-          <div className="bg-zinc-800 rounded-lg overflow-hidden">
-            <div className="p-6 flex flex-col items-center">
-              <div className="relative h-32 w-full mb-6">
-                <Image src="/placeholder.svg?height=100&width=200" alt="Dold Adress" fill className="object-contain" />
-              </div>
-              <h2 className="text-2xl font-bold mb-4">Dold Adress</h2>
-              <p className="text-center mb-6">
-                Dold Adress erbjuder tjänster för att skydda din personliga integritet och säkerhet genom diskreta
-                adresslösningar.
-              </p>
-              <Link
-                href="https://www.dold-adress.se"
-                rel="dofollow"
-                className="flex items-center text-orange-500 hover:text-orange-400 transition-colors"
-                target="_blank"
-              >
-                Besök deras hemsida <ExternalLink size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Partner 11 - Leap Marketing */}
-          <div className="bg-zinc-800 rounded-lg overflow-hidden">
-            <div className="p-6 flex flex-col items-center">
-              <div className="relative h-32 w-full mb-6">
-                <Image
-                  src="/placeholder.svg?height=100&width=200"
-                  alt="Leap Marketing"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <h2 className="text-2xl font-bold mb-4">Leap Marketing</h2>
-              <p className="text-center mb-6">
-                Leap Marketing är en digital marknadsföringsbyrå som hjälper företag att växa genom strategisk
-                marknadsföring och kreativa lösningar.
-              </p>
-              <Link
-                href="https://www.leapmarketing.se"
-                rel="dofollow"
-                className="flex items-center text-orange-500 hover:text-orange-400 transition-colors"
-                target="_blank"
-              >
-                Besök deras hemsida <ExternalLink size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Partner 12 - Fairing */}
-          <div className="bg-zinc-800 rounded-lg overflow-hidden">
-            <div className="p-6 flex flex-col items-center">
-              <div className="relative h-32 w-full mb-6">
-                <Image src="/fairing-logo.png" alt="Fairing Sports Nutrition" fill className="object-contain" />
-              </div>
-              <h2 className="text-2xl font-bold mb-4">Fairing Sports Nutrition</h2>
-              <p className="text-center mb-6">
-                Fairing är specialister på sportnäring och kosttillskott av högsta kvalitet. De erbjuder ett brett
-                sortiment av produkter för träning, återhämtning och hälsa.
-              </p>
-              <Link
-                href="https://fairing.se"
-                rel="dofollow"
-                className="flex items-center text-orange-500 hover:text-orange-400 transition-colors"
-                target="_blank"
-              >
-                Besök deras hemsida <ExternalLink size={16} className="ml-2" />
-              </Link>
-            </div>
+          <div className="max-w-prose animate-rise space-y-4 text-[1.0625rem] leading-relaxed text-ink-300 [animation-delay:160ms] lg:col-span-5">
+            <p>
+              På Bygg & Plattsättning tror vi på starka samarbeten. Genom att arbeta tillsammans med andra företag kan
+              vi erbjuda våra kunder bättre service och mer omfattande lösningar.
+            </p>
+            <p>Här presenterar vi de samarbetspartners som hjälper oss att leverera inom bygg och plattsättning.</p>
           </div>
         </div>
+      </section>
 
-        {/* Collaboration Benefits */}
-        <div className="mt-24 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Fördelar med våra samarbeten</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-zinc-800 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Handshake className="text-orange-500 mr-4" size={24} />
-                <h3 className="text-xl font-bold">Heltäckande lösningar</h3>
+      {/* ───────────── Partners ───────────── */}
+      <section aria-labelledby="partners-rubrik" className="container-site pb-24 md:pb-32">
+        <h2 id="partners-rubrik" className="sr-only">
+          Samarbetspartners
+        </h2>
+        <ul className="grid gap-4 md:grid-cols-2">
+          {partners.map((p) => (
+            <li key={p.name} className="reveal surface flex flex-col gap-6 p-6 sm:flex-row sm:items-start sm:p-8">
+              <div className={`relative flex h-28 w-full shrink-0 items-center justify-center overflow-hidden rounded-xl ring-1 sm:w-40 ${p.logo && !p.logoOnDark ? "bg-ink-100 ring-black/5" : "bg-ink-800 ring-white/[0.06]"}`}>
+                {p.logo ? (
+                  <Image src={p.logo} alt={`${p.name} logotyp`} fill sizes="160px" className="object-contain p-4" />
+                ) : (
+                  <span
+                    aria-hidden
+                    className="px-4 text-center font-display text-lg font-bold leading-tight tracking-tight text-ink-100"
+                  >
+                    {p.name}
+                  </span>
+                )}
               </div>
-              <p>
-                Genom våra samarbeten kan vi erbjuda mer heltäckande lösningar för dina bygg- och renoveringsprojekt,
-                från planering till slutförande.
-              </p>
-            </div>
-
-            <div className="bg-zinc-800 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Handshake className="text-orange-500 mr-4" size={24} />
-                <h3 className="text-xl font-bold">Expertis inom flera områden</h3>
+              <div className="flex flex-1 flex-col">
+                <h3 className="text-xl font-semibold text-white">{p.name}</h3>
+                <p className="mt-2 leading-relaxed text-ink-300">{p.description}</p>
+                <a
+                  href={p.href}
+                  target="_blank"
+                  rel="noopener"
+                  className="group mt-5 inline-flex items-center gap-1.5 self-start text-[0.9375rem] font-medium text-glacier-300 underline decoration-glacier-300/0 underline-offset-4 transition-colors hover:decoration-glacier-300"
+                >
+                  Besök {p.name}
+                  <ArrowUpRight
+                    size={16}
+                    className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                    aria-hidden
+                  />
+                  <span className="sr-only">(öppnas i ny flik)</span>
+                </a>
               </div>
-              <p>
-                Våra samarbetspartners bidrar med specialiserad expertis inom sina respektive områden, vilket
-                säkerställer högsta kvalitet i alla aspekter av ditt projekt.
-              </p>
-            </div>
+            </li>
+          ))}
+        </ul>
+      </section>
 
-            <div className="bg-zinc-800 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Handshake className="text-orange-500 mr-4" size={24} />
-                <h3 className="text-xl font-bold">Effektivare processer</h3>
-              </div>
-              <p>
-                Genom att samarbeta med etablerade partners kan vi effektivisera våra processer och leverera projekt
-                snabbare utan att kompromissa med kvaliteten.
-              </p>
-            </div>
-
-            <div className="bg-zinc-800 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Handshake className="text-orange-500 mr-4" size={24} />
-                <h3 className="text-xl font-bold">Lokala samarbeten</h3>
-              </div>
-              <p>
-                Vi prioriterar samarbeten med andra lokala företag för att stärka det lokala näringslivet och
-                säkerställa snabb service för våra kunder.
-              </p>
-            </div>
+      {/* ───────────── Benefits ───────────── */}
+      <section aria-labelledby="fordelar-rubrik" className="border-y border-white/[0.06] bg-ink-950">
+        <div className="container-site grid gap-12 py-24 md:py-32 lg:grid-cols-[1fr_2fr] lg:gap-20">
+          <div>
+            <p className="eyebrow">Fördelar</p>
+            <h2
+              id="fordelar-rubrik"
+              className="mt-5 text-4xl font-bold leading-[1.02] tracking-tight text-white md:text-5xl"
+            >
+              Därför samarbetar vi<span className="text-orange-500">.</span>
+            </h2>
           </div>
+          <ol className="grid gap-px overflow-hidden rounded-2xl bg-white/[0.06] md:grid-cols-2">
+            {benefits.map((b, i) => (
+              <li key={b.title} className="bg-ink-950 p-8">
+                <span className="font-display text-sm font-semibold tabular-nums text-orange-500">0{i + 1}</span>
+                <h3 className="mt-3 text-xl font-semibold text-white">{b.title}</h3>
+                <p className="mt-3 leading-relaxed text-ink-300">{b.text}</p>
+              </li>
+            ))}
+          </ol>
         </div>
+      </section>
 
-        {/* Call to Action */}
-        <div className="mt-24 text-center">
-          <h2 className="text-3xl font-bold mb-6">Intresserad av att samarbeta med oss?</h2>
-          <p className="mb-8 max-w-2xl mx-auto">
-            Är du ett företag som vill inleda ett samarbete med Bygg & Plattsättning? Vi är alltid öppna för nya
-            partnerskap som kan hjälpa oss att erbjuda bättre tjänster till våra kunder.
-          </p>
-          <Link
-            href="/kontakt"
-            className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-md transition-colors inline-block"
-          >
+      {/* ───────────── Become a partner ───────────── */}
+      <section aria-labelledby="bli-partner-rubrik" className="container-site py-20 md:py-28">
+        <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2
+              id="bli-partner-rubrik"
+              className="max-w-[20ch] text-3xl font-bold leading-[1.05] tracking-tight text-white md:text-4xl"
+            >
+              Vill ditt företag samarbeta med oss<span className="text-orange-500">?</span>
+            </h2>
+            <p className="mt-4 max-w-prose leading-relaxed text-ink-300">
+              Vi är alltid öppna för nya partnerskap som hjälper oss att erbjuda bättre tjänster till våra kunder.
+            </p>
+          </div>
+          <Link href="/kontakt" className="btn-cta shrink-0">
             Kontakta oss
+            <ArrowUpRight size={18} aria-hidden />
           </Link>
         </div>
-      </div>
+      </section>
     </main>
   )
 }

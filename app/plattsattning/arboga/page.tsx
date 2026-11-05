@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Plattsättning Arboga | Kakel & Klinker Proffs",
+  title: "Plattsättare i Arboga",
   description:
     "Professionell plattsättning i Arboga. Kakel, klinker, mosaik och natursten. Tätskikt enligt branschregler. Erfarna plattsättare. Begär offert!",
-  keywords: [
-    "plattsättning arboga",
-    "plattsättare arboga",
-    "kakel arboga",
-    "klinker arboga",
-    "kakelsättare arboga",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/plattsattning/arboga",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell plattsättning i Arboga. Kakel, klinker, mosaik och natursten med tätskikt enligt branschregler.",
     url: "https://byggoplattsattning.se/plattsattning/arboga",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 

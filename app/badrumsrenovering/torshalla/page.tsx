@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Badrumsrenovering Torshälla | Komplett Renovering av Badrum",
+  title: "Badrumsrenovering i Torshälla",
   description:
     "Professionell badrumsrenovering i Torshälla. Vi erbjuder totalentreprenad med tätskikt, plattsättning, VVS och el. Behörig våtrum. Begär offert idag!",
-  keywords: [
-    "badrumsrenovering torshälla",
-    "renovera badrum torshälla",
-    "badrum torshälla",
-    "plattsättare torshälla",
-    "kakel badrum torshälla",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/badrumsrenovering/torshalla",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell badrumsrenovering i Torshälla med totalentreprenad. Behörig våtrum, tätskikt och plattsättning.",
     url: "https://byggoplattsattning.se/badrumsrenovering/torshalla",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 

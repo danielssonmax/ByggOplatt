@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Snickare Västerås | Bygg & Snickeri Proffs",
+  title: "Snickare & byggfirma i Västerås",
   description:
     "Professionell snickare i Västerås. Tillbyggnad, ombyggnad, fönsterbyte, altanbygge och köksrenovering. Erfarna hantverkare. Begär offert!",
-  keywords: [
-    "snickare västerås",
-    "bygg västerås",
-    "snickeri västerås",
-    "tillbyggnad västerås",
-    "ombyggnad västerås",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/bygg-snickeri/vasteras",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell snickare i Västerås. Tillbyggnad, ombyggnad, fönsterbyte och köksrenovering med erfarna hantverkare.",
     url: "https://byggoplattsattning.se/bygg-snickeri/vasteras",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/hero-image.jpg"],
   },
 }
 
@@ -77,8 +73,7 @@ export default function ByggSnickeriVasteras() {
       ]}
       ctaTitle="Behöver du en snickare i Västerås?"
       ctaDescription="Kontakta oss idag för en kostnadsfri offert på ditt byggprojekt. Vi hjälper dig förverkliga dina idéer."
-      heroImage="/service-bathroom-1.webp"
-      secondaryImage="/service-bathroom-2.webp"
+      heroImage="/hero-image.jpg"
     />
   )
 }

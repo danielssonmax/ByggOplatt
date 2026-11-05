@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Plattsättning Eskilstuna | Kakel & Klinker Proffs",
+  title: "Plattsättare i Eskilstuna",
   description:
     "Professionell plattsättning i Eskilstuna. Kakel, klinker, mosaik och natursten. Tätskikt enligt branschregler. Erfarna plattsättare. Begär offert!",
-  keywords: [
-    "plattsättning eskilstuna",
-    "plattsättare eskilstuna",
-    "kakel eskilstuna",
-    "klinker eskilstuna",
-    "kakelsättare eskilstuna",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/plattsattning/eskilstuna",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell plattsättning i Eskilstuna. Kakel, klinker, mosaik och natursten med tätskikt enligt branschregler.",
     url: "https://byggoplattsattning.se/plattsattning/eskilstuna",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 

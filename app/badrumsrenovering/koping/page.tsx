@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Badrumsrenovering Köping | Komplett Renovering av Badrum",
+  title: "Badrumsrenovering i Köping",
   description:
     "Professionell badrumsrenovering i Köping. Vi erbjuder totalentreprenad med tätskikt, plattsättning, VVS och el. Behörig våtrum. Begär offert idag!",
-  keywords: [
-    "badrumsrenovering köping",
-    "renovera badrum köping",
-    "badrum köping",
-    "plattsättare köping",
-    "kakel badrum köping",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/badrumsrenovering/koping",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell badrumsrenovering i Köping med totalentreprenad. Behörig våtrum, tätskikt och plattsättning.",
     url: "https://byggoplattsattning.se/badrumsrenovering/koping",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 

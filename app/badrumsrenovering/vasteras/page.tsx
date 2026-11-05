@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Badrumsrenovering Västerås | Komplett Renovering av Badrum",
+  title: "Badrumsrenovering i Västerås",
   description:
     "Professionell badrumsrenovering i Västerås. Vi erbjuder totalentreprenad med tätskikt, plattsättning, VVS och el. Behörig våtrum. Begär offert idag!",
-  keywords: [
-    "badrumsrenovering västerås",
-    "renovera badrum västerås",
-    "badrum västerås",
-    "plattsättare västerås",
-    "kakel badrum västerås",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/badrumsrenovering/vasteras",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell badrumsrenovering i Västerås med totalentreprenad. Behörig våtrum, tätskikt och plattsättning.",
     url: "https://byggoplattsattning.se/badrumsrenovering/vasteras",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 

@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Plattsättning Köping | Kakel & Klinker Proffs",
+  title: "Plattsättare i Köping",
   description:
     "Professionell plattsättning i Köping. Kakel, klinker, mosaik och natursten. Tätskikt enligt branschregler. Erfarna plattsättare. Begär offert!",
-  keywords: [
-    "plattsättning köping",
-    "plattsättare köping",
-    "kakel köping",
-    "klinker köping",
-    "kakelsättare köping",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/plattsattning/koping",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell plattsättning i Köping. Kakel, klinker, mosaik och natursten med tätskikt enligt branschregler.",
     url: "https://byggoplattsattning.se/plattsattning/koping",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 

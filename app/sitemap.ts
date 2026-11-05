@@ -1,87 +1,47 @@
 import type { MetadataRoute } from "next"
+import { BLOG_POSTS } from "@/lib/blog-posts"
+import { PROJECTS } from "@/lib/projects"
+import { CITIES, SERVICES, SITE } from "@/lib/site"
+
+// Bump this when page content actually changes. A lastModified that changes on
+// every build (new Date()) teaches Google to ignore the value.
+const CONTENT_UPDATED = "2026-11-05"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://byggoplattsattning.se"
+  const base = SITE.url
 
-  // List of cities for service pages
-  const serviceCities = ["eskilstuna", "strangnas", "vasteras", "katrineholm", "torshalla", "koping", "arboga"]
-
-  // Services
-  const services = ["badrumsrenovering", "plattsattning", "koksrenovering", "bygg-snickeri"]
-
-  // Blog posts slugs
-  const blogSlugs = [
-    "planera-badrumsrenovering",
-    "valja-ratt-kakel",
-    "kokstrender-2024",
-    "webbfix-webbyra-kopa-hemsida-eskilstuna",
-    "elektriker-eskilstuna-lokal-trygghet",
-    "hyra-lagenhet-eskilstuna-vad-bor-man-tanka-pa",
-  ]
-
-  // Main pages
   const mainPages = [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/om-oss`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/tjanster`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/kontakt`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/samarbeten`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blogg`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/fastighet-uthyres-eskilstuna-kyrkogatan-7`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-  ]
-
-  // Service city pages (all combinations of services and cities)
-  const serviceCityPages = services.flatMap((service) =>
-    serviceCities.map((city) => ({
-      url: `${baseUrl}/${service}/${city}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    }))
-  )
-
-  // Blog post pages
-  const blogPostPages = blogSlugs.map((slug) => ({
-    url: `${baseUrl}/blogg/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
+    "",
+    "/tjanster",
+    "/flytspackling",
+    "/om-oss",
+    "/kontakt",
+    "/blogg",
+    "/samarbeten",
+    "/fastighet-uthyres-eskilstuna-kyrkogatan-7",
+    // Only listed once there are real reference jobs (the page 404s while empty).
+    ...(PROJECTS.length > 0 ? ["/referenser"] : []),
+  ].map((path) => ({
+    url: `${base}${path}`,
+    lastModified: CONTENT_UPDATED,
   }))
 
-  return [...mainPages, ...serviceCityPages, ...blogPostPages]
+  const serviceHubPages = SERVICES.map((service) => ({
+    url: `${base}/${service.slug}`,
+    lastModified: CONTENT_UPDATED,
+  }))
+
+  const serviceCityPages = SERVICES.flatMap((service) =>
+    CITIES.map((city) => ({
+      url: `${base}/${service.slug}/${city.slug}`,
+      lastModified: CONTENT_UPDATED,
+    })),
+  )
+
+  const blogPostPages = BLOG_POSTS.map((post) => ({
+    url: `${base}/blogg/${post.slug}`,
+    lastModified: post.updated ?? post.date,
+  }))
+
+  return [...mainPages, ...serviceHubPages, ...serviceCityPages, ...blogPostPages]
 }

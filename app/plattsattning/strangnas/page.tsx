@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Plattsättning Strängnäs | Kakel & Klinker Proffs",
+  title: "Plattsättare i Strängnäs",
   description:
     "Professionell plattsättning i Strängnäs. Kakel, klinker, mosaik och natursten. Tätskikt enligt branschregler. Erfarna plattsättare. Begär offert!",
-  keywords: [
-    "plattsättning strängnäs",
-    "plattsättare strängnäs",
-    "kakel strängnäs",
-    "klinker strängnäs",
-    "kakelsättare strängnäs",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/plattsattning/strangnas",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell plattsättning i Strängnäs. Kakel, klinker, mosaik och natursten med tätskikt enligt branschregler.",
     url: "https://byggoplattsattning.se/plattsattning/strangnas",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 

@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Snickare Eskilstuna | Bygg & Snickeri Proffs",
+  title: "Snickare & byggfirma i Eskilstuna",
   description:
     "Professionell snickare i Eskilstuna. Tillbyggnad, ombyggnad, fönsterbyte, altanbygge och köksrenovering. Erfarna hantverkare. Begär offert!",
-  keywords: [
-    "snickare eskilstuna",
-    "bygg eskilstuna",
-    "snickeri eskilstuna",
-    "tillbyggnad eskilstuna",
-    "ombyggnad eskilstuna",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/bygg-snickeri/eskilstuna",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell snickare i Eskilstuna. Tillbyggnad, ombyggnad, fönsterbyte och köksrenovering med erfarna hantverkare.",
     url: "https://byggoplattsattning.se/bygg-snickeri/eskilstuna",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/hero-image.jpg"],
   },
 }
 
@@ -77,8 +73,7 @@ export default function ByggSnickeriEskilstuna() {
       ]}
       ctaTitle="Behöver du en snickare i Eskilstuna?"
       ctaDescription="Kontakta oss idag för en kostnadsfri offert på ditt byggprojekt. Vi hjälper dig förverkliga dina idéer."
-      heroImage="/service-bathroom-1.webp"
-      secondaryImage="/service-bathroom-2.webp"
+      heroImage="/hero-image.jpg"
     />
   )
 }

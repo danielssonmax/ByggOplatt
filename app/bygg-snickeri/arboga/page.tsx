@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Snickare Arboga | Bygg & Snickeri Proffs",
+  title: "Snickare & byggfirma i Arboga",
   description:
     "Professionell snickare i Arboga. Tillbyggnad, ombyggnad, fönsterbyte, altanbygge och köksrenovering. Erfarna hantverkare. Begär offert!",
-  keywords: [
-    "snickare arboga",
-    "bygg arboga",
-    "snickeri arboga",
-    "tillbyggnad arboga",
-    "ombyggnad arboga",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/bygg-snickeri/arboga",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell snickare i Arboga. Tillbyggnad, ombyggnad, fönsterbyte och köksrenovering med erfarna hantverkare.",
     url: "https://byggoplattsattning.se/bygg-snickeri/arboga",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/hero-image.jpg"],
   },
 }
 
@@ -77,8 +73,7 @@ export default function ByggSnickeriArboga() {
       ]}
       ctaTitle="Behöver du en snickare i Arboga?"
       ctaDescription="Kontakta oss idag för en kostnadsfri offert på ditt byggprojekt. Vi hjälper dig förverkliga dina idéer."
-      heroImage="/service-bathroom-1.webp"
-      secondaryImage="/service-bathroom-2.webp"
+      heroImage="/hero-image.jpg"
     />
   )
 }

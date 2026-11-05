@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Plattsättning Torshälla | Kakel & Klinker Proffs",
+  title: "Plattsättare i Torshälla",
   description:
     "Professionell plattsättning i Torshälla. Kakel, klinker, mosaik och natursten. Tätskikt enligt branschregler. Erfarna plattsättare. Begär offert!",
-  keywords: [
-    "plattsättning torshälla",
-    "plattsättare torshälla",
-    "kakel torshälla",
-    "klinker torshälla",
-    "kakelsättare torshälla",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/plattsattning/torshalla",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell plattsättning i Torshälla. Kakel, klinker, mosaik och natursten med tätskikt enligt branschregler.",
     url: "https://byggoplattsattning.se/plattsattning/torshalla",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 

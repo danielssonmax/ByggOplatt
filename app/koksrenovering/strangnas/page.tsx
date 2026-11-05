@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Köksrenovering Strängnäs | Renovera Kök Proffs",
+  title: "Köksrenovering i Strängnäs",
   description:
     "Professionell köksrenovering i Strängnäs. Komplett renovering med VVS, el, plattsättning och montering. Skräddarsydda lösningar. Begär offert!",
-  keywords: [
-    "köksrenovering strängnäs",
-    "renovera kök strängnäs",
-    "kök strängnäs",
-    "köksmontör strängnäs",
-    "nytt kök strängnäs",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/koksrenovering/strangnas",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell köksrenovering i Strängnäs. Komplett renovering med VVS, el, plattsättning och montering av köksinredning.",
     url: "https://byggoplattsattning.se/koksrenovering/strangnas",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/hero-image.jpg"],
   },
 }
 
@@ -77,8 +73,7 @@ export default function KoksrenoveringStrangnas() {
       ]}
       ctaTitle="Redo att renovera köket i Strängnäs?"
       ctaDescription="Kontakta oss idag för en kostnadsfri offert på din köksrenovering. Vi hjälper dig skapa ett kök du älskar."
-      heroImage="/service-bathroom-1.webp"
-      secondaryImage="/service-bathroom-2.webp"
+      heroImage="/hero-image.jpg"
     />
   )
 }

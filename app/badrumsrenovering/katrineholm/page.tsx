@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Badrumsrenovering Katrineholm | Komplett Renovering av Badrum",
+  title: "Badrumsrenovering i Katrineholm",
   description:
     "Professionell badrumsrenovering i Katrineholm. Vi erbjuder totalentreprenad med tätskikt, plattsättning, VVS och el. Behörig våtrum. Begär offert idag!",
-  keywords: [
-    "badrumsrenovering katrineholm",
-    "renovera badrum katrineholm",
-    "badrum katrineholm",
-    "plattsättare katrineholm",
-    "kakel badrum katrineholm",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/badrumsrenovering/katrineholm",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell badrumsrenovering i Katrineholm med totalentreprenad. Behörig våtrum, tätskikt och plattsättning.",
     url: "https://byggoplattsattning.se/badrumsrenovering/katrineholm",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 

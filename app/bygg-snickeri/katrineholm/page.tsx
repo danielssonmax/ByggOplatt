@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Snickare Katrineholm | Bygg & Snickeri Proffs",
+  title: "Snickare & byggfirma i Katrineholm",
   description:
     "Professionell snickare i Katrineholm. Tillbyggnad, ombyggnad, fönsterbyte, altanbygge och köksrenovering. Erfarna hantverkare. Begär offert!",
-  keywords: [
-    "snickare katrineholm",
-    "bygg katrineholm",
-    "snickeri katrineholm",
-    "tillbyggnad katrineholm",
-    "ombyggnad katrineholm",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/bygg-snickeri/katrineholm",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell snickare i Katrineholm. Tillbyggnad, ombyggnad, fönsterbyte och köksrenovering med erfarna hantverkare.",
     url: "https://byggoplattsattning.se/bygg-snickeri/katrineholm",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/hero-image.jpg"],
   },
 }
 
@@ -77,8 +73,7 @@ export default function ByggSnickeriKatrineholm() {
       ]}
       ctaTitle="Behöver du en snickare i Katrineholm?"
       ctaDescription="Kontakta oss idag för en kostnadsfri offert på ditt byggprojekt. Vi hjälper dig förverkliga dina idéer."
-      heroImage="/service-bathroom-1.webp"
-      secondaryImage="/service-bathroom-2.webp"
+      heroImage="/hero-image.jpg"
     />
   )
 }

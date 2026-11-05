@@ -2,16 +2,9 @@ import type { Metadata } from "next"
 import { ServiceCityPage } from "@/components/service-city-page"
 
 export const metadata: Metadata = {
-  title: "Plattsättning Västerås | Kakel & Klinker Proffs",
+  title: "Plattsättare i Västerås",
   description:
     "Professionell plattsättning i Västerås. Kakel, klinker, mosaik och natursten. Tätskikt enligt branschregler. Erfarna plattsättare. Begär offert!",
-  keywords: [
-    "plattsättning västerås",
-    "plattsättare västerås",
-    "kakel västerås",
-    "klinker västerås",
-    "kakelsättare västerås",
-  ],
   alternates: {
     canonical: "https://byggoplattsattning.se/plattsattning/vasteras",
   },
@@ -21,6 +14,9 @@ export const metadata: Metadata = {
       "Professionell plattsättning i Västerås. Kakel, klinker, mosaik och natursten med tätskikt enligt branschregler.",
     url: "https://byggoplattsattning.se/plattsattning/vasteras",
     type: "website",
+    siteName: "Bygg & Plattsättning",
+    locale: "sv_SE",
+    images: ["/service-bathroom-1.webp"],
   },
 }
 
