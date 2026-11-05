@@ -103,7 +103,7 @@ export default function KoksrenoveringHub() {
       faqs={[
         {
           q: "Kan jag köpa köket själv och låta er montera det?",
-          a: "Ja. Många väljer kök hos en köksleverantör och låter oss sköta rivning, installationer och montering. Hör av dig så går vi igenom vad som ingår i just ditt projekt.",
+          a: "Montering av köksinredning är en del av det vi gör. Har du redan valt kök hos en leverantör, berätta det när du hör av dig, så går vi igenom vad vi kan ta hand om i just ditt projekt: rivning, installationer, plattsättning och montering.",
         },
         {
           q: "Hur lång tid tar en köksrenovering?",

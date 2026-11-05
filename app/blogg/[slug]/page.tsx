@@ -21,9 +21,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const image = post.image ?? "/hero-image.jpg"
 
+  // Keep the search-result title within ~60 characters: drop the " | Bygg & Plattsättning"
+  // suffix from the layout template when the article title is long on its own.
+  const withBrand = `${post.title} | ${SITE.name}`
+  const title = withBrand.length > 60 ? { absolute: post.title } : post.title
+  // Google cuts descriptions around 155–160 characters; trim on a word boundary.
+  const description =
+    post.excerpt.length > 158 ? `${post.excerpt.slice(0, 155).replace(/\s+\S*$/, "")}…` : post.excerpt
+
   return {
-    title: post.title,
-    description: post.excerpt,
+    title,
+    description,
     alternates: {
       canonical: `/blogg/${post.slug}`,
     },

@@ -317,16 +317,17 @@ export function ServiceCityPage({
             <div>
               <h3 className="text-xl font-semibold text-white">Behörig våtrum</h3>
               <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink-300">
-                Vi uppfyller alla de krav som Byggkeramikrådet tillsammans med Säker Vatten ställer för att få bygga
-                behöriga våtrum. Plattsättning är vår etablerade och fortlöpande verksamhet, och alla våra plattsättare
-                har den utbildning och erfarenhet som krävs.
+                Vi uppfyller kraven från Byggkeramikrådet och Säker Vatten för att bygga behöriga våtrum.{" "}
+                <Link href="/blogg/tatskikt-i-badrum" className="link">
+                  Så fungerar tätskikt och behörighet
+                </Link>
+                .
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-white">Lång erfarenhet</h3>
+              <h3 className="text-xl font-semibold text-white">Över 20 år i branschen</h3>
               <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink-300">
-                Med över 20 års erfarenhet i byggbranschen är vi din partner för bygg- och renoveringsprojekt i{" "}
-                {cityName}. Vi arbetar enligt branschens normer och föreskrifter.
+                Vi arbetar enligt branschens normer och föreskrifter, med en kontaktperson genom hela projektet.
               </p>
             </div>
           </div>

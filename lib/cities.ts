@@ -36,7 +36,7 @@ export const CITY_INFO: Record<string, CityInfo> = {
     distanceKm: 9,
     driveMin: 12,
     local:
-      "Torshälla ligger knappt en mil norr om vår bas i Eskilstuna, ungefär tolv minuter bort med bil. Torshälla tillhör Eskilstuna kommun, så det är samma kommun som handlägger eventuella bygglov och anmälningar som för våra uppdrag inne i Eskilstuna.",
+      "Torshälla ligger knappt en mil norr om vår bas i Eskilstuna, ungefär tolv minuter bort med bil. Orten tillhör Eskilstuna kommun.",
   },
   strangnas: {
     slug: "strangnas",
@@ -47,7 +47,7 @@ export const CITY_INFO: Record<string, CityInfo> = {
     driveMin: 26,
     route: "E20",
     local:
-      "Strängnäs ligger vid Mälaren, drygt tre mil öster om Eskilstuna längs E20. Resan från vår bas tar ungefär en halvtimme. Strängnäs hör till samma län som Eskilstuna, Södermanlands län, och bygglovsfrågor hanteras av Strängnäs kommun.",
+      "Strängnäs ligger vid Mälaren, drygt tre mil öster om Eskilstuna längs E20. Resan från vår bas tar ungefär en halvtimme, och Strängnäs hör till samma län som Eskilstuna.",
   },
   vasteras: {
     slug: "vasteras",
@@ -58,7 +58,7 @@ export const CITY_INFO: Record<string, CityInfo> = {
     driveMin: 41,
     route: "E20, riksväg 56 och E18",
     local:
-      "Till Västerås kör vi norrut på riksväg 56 över Mälaren vid Kvicksund, ungefär 45 kilometer och drygt 40 minuter från vår bas i Eskilstuna. Västerås ligger i Västmanlands län, och här är det Västerås stad som handlägger bygglov och anmälningar.",
+      "Till Västerås kör vi norrut på riksväg 56 över Mälaren vid Kvicksund, ungefär 45 kilometer och drygt 40 minuter från vår bas i Eskilstuna. Västerås ligger på andra sidan länsgränsen, i Västmanlands län.",
   },
   katrineholm: {
     slug: "katrineholm",
@@ -69,7 +69,7 @@ export const CITY_INFO: Record<string, CityInfo> = {
     driveMin: 60,
     route: "väg 230 och riksväg 56",
     local:
-      "Katrineholm ligger drygt sex mil söder om Eskilstuna, ungefär en timme bort via väg 230 och riksväg 56. Det är den ort vi täcker som ligger längst från vår bas, så vi planerar platsbesök och arbetsdagar i god tid tillsammans med dig. Bygglovsfrågor hanteras av Katrineholms kommun.",
+      "Katrineholm ligger drygt sex mil söder om Eskilstuna, ungefär en timme bort via väg 230 och riksväg 56. Det är den ort vi täcker som ligger längst från vår bas, så vi planerar platsbesök och arbetsdagar i god tid tillsammans med dig.",
   },
   koping: {
     slug: "koping",
@@ -80,7 +80,7 @@ export const CITY_INFO: Record<string, CityInfo> = {
     driveMin: 40,
     route: "E20 och väg 250",
     local:
-      "Köping ligger vid Mälarens västra del, ungefär 42 kilometer från vår bas i Eskilstuna via E20 och väg 250. Restiden är runt 40 minuter. Köping hör till Västmanlands län och det är Köpings kommun som handlägger bygglov och anmälningar.",
+      "Köping ligger vid Mälarens västra del, ungefär 42 kilometer från vår bas i Eskilstuna via E20 och väg 250. Restiden är runt 40 minuter. Köping hör till Västmanlands län.",
   },
   arboga: {
     slug: "arboga",
@@ -91,6 +91,6 @@ export const CITY_INFO: Record<string, CityInfo> = {
     driveMin: 37,
     route: "E20",
     local:
-      "Arboga nås enkelt västerut längs E20, ungefär 44 kilometer och knappt 40 minuter från vår bas i Eskilstuna. Arboga ligger i Västmanlands län, och bygglov och anmälningar handläggs av Arboga kommun.",
+      "Arboga nås enkelt västerut längs E20, ungefär 44 kilometer och knappt 40 minuter från vår bas i Eskilstuna. Arboga ligger i Västmanlands län.",
   },
 }

@@ -380,6 +380,250 @@ const POSTS: BlogPost[] = [
       <p>Populära områden på senare är det nybyggda området på Norr, Munktellstaden och Söder har såklart alltid varit väldigt attraktivt. Allt beror ju såklart helt på vad du är ute efter, vill du nora centrum? Vill du bo lite mer avlägset? Vart kommer du jobba? Det är många faktorer som avgör men rent generellt så är dom flesta områden i Eskilstuna väldigt bra och det finns ett gott utbud av hyresrätter.</p>
     `,
   },
+  {
+    id: 7,
+    title: "Vad kostar en badrumsrenovering?",
+    slug: "vad-kostar-en-badrumsrenovering",
+    date: "2026-11-05",
+    author: "Bygg & Plattsättning",
+    readTime: "7 min",
+    category: "Badrumsrenovering",
+    excerpt:
+      "En komplett badrumsrenovering kostar sällan under 100 000 kronor. Här går vi igenom vad som styr priset, hur rotavdraget påverkar och vad en bra offert ska innehålla.",
+    content: `
+      <p>En komplett badrumsrenovering kostar sällan under 100 000 kronor och kan bli flera hundra tusen, beroende på badrummets storlek, hur mycket som ska flyttas och vilka material du väljer. Med rotavdraget betalar du 30 procent mindre för arbetet, men inte för materialet. Nedan går vi igenom vad som styr priset, hur du räknar med rotavdraget och vad en bra offert ska innehålla.</p>
+
+      <h2>Vad ingår i en komplett badrumsrenovering?</h2>
+      <p>När man jämför priser är det viktigt att veta vad som faktiskt ingår. En komplett renovering består oftast av de här momenten:</p>
+      <ul>
+        <li>Rivning av det gamla badrummet och bortforsling av materialet</li>
+        <li>VVS-installation: rör, avlopp, golvbrunn, dusch och toalett</li>
+        <li>Elinstallation: belysning, uttag, golvvärme och eventuell handdukstork</li>
+        <li>Underarbete och tätskikt enligt branschreglerna</li>
+        <li>Plattsättning av kakel och klinker</li>
+        <li>Montering av porslin, duschvägg, möbler och övrig inredning</li>
+      </ul>
+      <p>Momenten utförs av olika yrkesgrupper. Anlitar du ett företag som tar hela entreprenaden har du en kontaktperson som samordnar plattsättare, VVS-montörer och elektriker. Anlitar du hantverkarna själv blir det du som håller ihop tidplanen och ser till att varje moment är klart innan nästa börjar.</p>
+
+      <h2>Vad som styr priset</h2>
+      <p>Två badrum med samma yta kan få helt olika slutsumma. Det är sällan kvadratmetrarna i sig som avgör, utan vad som behöver göras bakom ytskiktet.</p>
+
+      <h3>Storlek och planlösning</h3>
+      <p>Fler kvadratmeter betyder mer kakel, klinker och tätskikt, och fler timmar för plattsättning. Men många moment är ungefär desamma oavsett storlek: rivning, VVS, el, tätning runt golvbrunn och genomföringar, och montering av porslin. Därför blir ett litet badrum ofta dyrare per kvadratmeter än ett stort.</p>
+
+      <h3>Rivning och underlag</h3>
+      <p>Allt gammalt ska bort, och först när ytskiktet är rivet syns hur väggar och golv mår. Fuktskadat virke, sprickor eller ett golv med fel lutning mot brunnen måste åtgärdas innan det nya tätskiktet kan läggas. Sådant går inte alltid att se före rivningen, och därför är det viktigt att offerten beskriver hur oförutsedda arbeten hanteras.</p>
+
+      <h3>Flytt av VVS och el</h3>
+      <p>Att behålla toalett, handfat, dusch och golvbrunn på samma plats är det mest kostnadseffektiva. Ska brunnen flyttas eller toaletten byta vägg behöver rör och avlopp dras om, och golvet byggas upp med ny lutning. Samma sak gäller el: nya uttag, golvvärme, spotlights i taket eller en handdukstork kräver elarbete som ska göras av en behörig elektriker.</p>
+
+      <h3>Tätskikt</h3>
+      <p>Tätskiktet skyddar huset mot vattenskador, och det är inget du ska spara in på. Det ska byggas enligt Byggkeramikrådets branschregler för våtrum, BBV, med ett godkänt tätskiktssystem. Kostnaden för tätskiktet är liten jämfört med vad det kostar att åtgärda en vattenskada. Läs mer i vår guide om <a href="/blogg/tatskikt-i-badrum">tätskikt i badrum</a>.</p>
+
+      <h3>Golvvärme</h3>
+      <p>Golvvärme gör badrummet bekvämare och hjälper golvet att torka efter dusch. Den läggs innan tätskikt och klinker, så det är ett beslut som behöver tas tidigt i planeringen.</p>
+
+      <h3>Kakel och klinker</h3>
+      <p>Plattorna är den post där priset kan variera mest. Som en grov tumregel kan du räkna med:</p>
+      <ul>
+        <li>Enkelt keramiskt kakel: 200–400 kr/m²</li>
+        <li>Porslinsklinker: 400–800 kr/m²</li>
+        <li>Natursten: 800–2 000 kr/m²</li>
+      </ul>
+      <p>Till det kommer fix, fog och tätskiktsmaterial. Formatet påverkar också arbetskostnaden. Storformat kräver ett mycket plant underlag och noggrann planering kring golvbrunnen, och mosaik tar längre tid att sätta. Mer om valet av plattor finns i <a href="/blogg/valja-ratt-kakel">Så väljer du rätt kakel till ditt badrum</a>.</p>
+
+      <h3>Inredning och porslin</h3>
+      <p>Toalett, handfat, kommod, spegelskåp, duschvägg och blandare finns i alla prisklasser. Det är också här det är lättast att justera budgeten utan att kompromissa med det som är svårt att ändra senare, som tätskikt och installationer.</p>
+
+      <h2>Hur lång tid tar det?</h2>
+      <p>En komplett badrumsrenovering tar vanligtvis 3–4 veckor. Arbetet sker i en bestämd ordning, och tätskiktet behöver torka innan plattorna kan sättas. Planera för att vara utan badrum under den tiden.</p>
+
+      <h2>Så påverkar rotavdraget</h2>
+      <p>Äger du bostaden och bor där kan du få rotavdrag för arbetskostnaden. Sedan 1 januari 2026 är avdraget 30 procent av arbetskostnaden, och du kan få högst 50 000 kronor i rotavdrag per person och år. Material, resor, utrustning och administration ger inte rätt till avdrag. Företaget drar av beloppet direkt på fakturan och begär sedan utbetalning från Skatteverket.</p>
+
+      <h3>Räkneexempel</h3>
+      <p>Siffrorna nedan är ett exempel för att visa hur avdraget räknas, inte ett pris. Säg att en offert landar på 150 000 kronor, varav 90 000 kronor är arbete och 60 000 kronor är material.</p>
+      <ul>
+        <li>Rotavdrag: 30 % × 90 000 kr = 27 000 kr</li>
+        <li>Att betala: 150 000 kr − 27 000 kr = 123 000 kr</li>
+      </ul>
+      <p>Avdraget beräknas bara på arbetskostnaden. Därför ska arbete och material alltid stå var för sig i offerten och på fakturan.</p>
+      <p>Taket på 50 000 kronor gäller per person. Med en arbetskostnad på 200 000 kronor blir 30 procent 60 000 kronor, vilket är mer än en person kan få. Är ni två som äger och bor i bostaden kan avdraget delas mellan er, till exempel 30 000 kronor var. Mer om reglerna och vanliga misstag finns i <a href="/blogg/rot-avdrag-badrumsrenovering">Rotavdrag vid badrumsrenovering</a>.</p>
+
+      <h2>Så jämför du offerter</h2>
+      <p>Den lägsta summan är inte alltid den billigaste. Ofta skiljer sig offerter åt för att de innehåller olika saker, så jämför innehållet rad för rad. En bra offert visar tydligt:</p>
+      <ul>
+        <li>Vilka moment som ingår, från rivning och bortforsling till slutstädning</li>
+        <li>Arbetskostnad och material var för sig, och hur stort rotavdraget beräknas bli</li>
+        <li>Att tätskiktet byggs enligt BBV och vilket tätskiktssystem som används</li>
+        <li>Vem som utför VVS och el, och vilken behörighet eller auktorisation de har</li>
+        <li>Om priset är fast eller på löpande räkning</li>
+        <li>Hur oförutsedda arbeten, som dolda fuktskador, prissätts och godkänns</li>
+        <li>Tidplan och betalningsplan</li>
+        <li>Vilka dokument du får när arbetet är klart, till exempel Byggkeramikrådets kvalitetsdokument och intyg om Säker Vatteninstallation för VVS-arbetet</li>
+      </ul>
+      <p>Saknas någon av punkterna, fråga. Är ett anbud betydligt lägre än de andra beror det ofta på att något moment inte är med.</p>
+
+      <h2>Så håller du nere kostnaden</h2>
+      <ul>
+        <li>Behåll placeringen av golvbrunn, toalett och dusch om den fungerar</li>
+        <li>Välj plattor och inredning innan arbetet börjar. Ändringar under arbetets gång tar tid.</li>
+        <li>Beställ 10–15 procent extra plattor för spill och framtida reparationer</li>
+        <li>Lägg budgeten på det som är svårt att ändra senare, som tätskikt och installationer. Spegel och belysning är lätta att byta längre fram.</li>
+      </ul>
+
+      <h2>Vill du veta vad ditt badrum kostar?</h2>
+      <p>Varje badrum är olika, och ett rättvisande pris kräver att någon tittar på det på plats. Läs mer om hur vi arbetar med <a href="/badrumsrenovering">badrumsrenovering</a> och <a href="/badrumsrenovering/eskilstuna">badrumsrenovering i Eskilstuna</a>, eller <a href="/kontakt">kontakta oss</a> för en kostnadsfri offert.</p>
+    `,
+  },
+  {
+    id: 8,
+    title: "Rotavdrag vid badrumsrenovering – regler och räkneexempel",
+    slug: "rot-avdrag-badrumsrenovering",
+    date: "2026-11-05",
+    author: "Bygg & Plattsättning",
+    readTime: "5 min",
+    category: "Badrumsrenovering",
+    excerpt:
+      "Rotavdraget är 30 procent av arbetskostnaden, högst 50 000 kronor per person och år. Så fungerar det vid en badrumsrenovering, med räkneexempel och vanliga misstag.",
+    content: `
+      <p>Vid en badrumsrenovering kan du få rotavdrag med 30 procent av arbetskostnaden, högst 50 000 kronor per person och år. Det gäller om du äger bostaden och bor i den, och avdraget dras direkt på fakturan från företaget. Material ger inte rätt till avdrag. Här går vi igenom reglerna som gäller 2026, visar ett räkneexempel och tar upp de vanligaste misstagen.</p>
+
+      <h2>Så fungerar rotavdraget</h2>
+      <p>Rotavdraget är en skattereduktion för arbete med reparation, underhåll, ombyggnad och tillbyggnad av din bostad. När du anlitar ett företag med F-skatt drar företaget av rotavdraget från arbetskostnaden på fakturan. När arbetet är utfört och du har betalat ansöker företaget om utbetalning från Skatteverket. Det är betalningsdagen som avgör vilket år avdraget räknas till.</p>
+
+      <h3>Nivåer och tak 2026</h3>
+      <ul>
+        <li>30 procent av arbetskostnaden</li>
+        <li>Högst 50 000 kronor i rotavdrag per person och år</li>
+        <li>Rot och rut har ett gemensamt tak på 75 000 kronor per person och år</li>
+      </ul>
+      <p>Under 2025 var rotavdraget tillfälligt höjt till 50 procent för arbeten som betalades mellan 12 maj och 31 december 2025. Sedan 1 januari 2026 gäller åter 30 procent.</p>
+
+      <h2>Vem kan få rotavdrag?</h2>
+      <ul>
+        <li>Du måste äga bostaden under den period som arbetet utförs.</li>
+        <li>Du måste bo i bostaden, helt eller delvis. Den ska användas som permanentbostad eller fritidsbostad.</li>
+        <li>Avdraget gäller småhus, bostadsrätter och ägarlägenheter. I en bostadsrätt gäller det bara arbete som utförs inne i lägenheten. Bor du i hyresrätt kan du inte få rotavdrag.</li>
+        <li>Avdraget kan inte bli större än den skatt du betalar. Hur mycket du kan få beror på din skatt och på andra skattereduktioner under året.</li>
+      </ul>
+
+      <h2>Rotavdrag i bostadsrätt</h2>
+      <p>I en bostadsrätt får du rotavdrag för arbete inne i din lägenhet, och ett badrum hör dit. Innan du sätter igång är det värt att läsa föreningens stadgar. Där framgår vad som är ditt ansvar och vad som är föreningens. Ingrepp i ledningar för vatten och avlopp kräver ofta styrelsens tillstånd, så ta kontakt med styrelsen i god tid.</p>
+
+      <h2>Betalningsdagen avgör året</h2>
+      <p>Rotavdraget räknas till det år du betalar, inte det år arbetet görs. Betalar du i december hamnar avdraget på det årets utrymme, betalar du i januari på nästa års. Har du flera projekt på gång kan det därför löna sig att tänka på när fakturorna betalas, så att du inte slår i taket ett år och har utrymme kvar ett annat.</p>
+
+      <h2>Vad räknas i ett badrum?</h2>
+      <p>En badrumsrenovering är en ombyggnad av bostaden, och det är arbetet med den som ger rätt till avdrag. Det kan till exempel vara rivning, underarbete, tätskikt, plattsättning, VVS- och elarbete och montering av inredning. Det här ger inte rätt till avdrag:</p>
+      <ul>
+        <li>Material, som kakel, klinker, tätskiktsmaterial, porslin och blandare</li>
+        <li>Resor, utrustning och administration i samband med arbetet</li>
+        <li>Nybyggnation</li>
+      </ul>
+
+      <h2>Räkneexempel</h2>
+      <p>Siffrorna är påhittade för att visa hur avdraget räknas. De är inte ett pris.</p>
+
+      <h3>En ägare</h3>
+      <p>Arbetskostnad 80 000 kronor och material 50 000 kronor.</p>
+      <ul>
+        <li>Rotavdrag: 30 % × 80 000 kr = 24 000 kr</li>
+        <li>Du betalar: 80 000 kr + 50 000 kr − 24 000 kr = 106 000 kr</li>
+      </ul>
+
+      <h3>Hög arbetskostnad och två ägare</h3>
+      <p>Arbetskostnad 200 000 kronor. 30 procent av det blir 60 000 kronor, vilket är mer än taket på 50 000 kronor för en person. Är ni två som äger och bor i bostaden kan avdraget delas, till exempel 30 000 kronor var, och då ryms hela avdraget.</p>
+
+      <h2>Vanliga misstag</h2>
+      <ul>
+        <li><strong>Betalning med kontanter.</strong> Det krävs elektronisk betalning för att få rotavdrag, till exempel med kort, banköverföring eller Swish.</li>
+        <li><strong>Arbete och material står ihop.</strong> Fakturan ska visa hur kostnaden fördelar sig på arbete, material och övriga kostnader. Annars går avdraget inte att räkna fram.</li>
+        <li><strong>Utrymmet är redan använt.</strong> Har du använt rut eller rot tidigare under året finns det mindre kvar. Rot och rut delar på 75 000 kronor per person och år, och av dem får högst 50 000 kronor vara rot.</li>
+        <li><strong>Avdraget begärs för fel person.</strong> Den som ska få avdraget måste både äga och bo i bostaden.</li>
+        <li><strong>Skatten räcker inte.</strong> Har du betalat lite skatt under året kan avdraget bli mindre än du räknat med.</li>
+        <li><strong>Företaget saknar F-skatt.</strong> Avdraget på fakturan förutsätter att du anlitar ett företag med F-skatt.</li>
+      </ul>
+      <p>Skatteverkets egen beskrivning av reglerna hittar du på <a href="https://www.skatteverket.se/privat/fastigheterochbostad/rotochrutarbete.4.2e56d4ba1202f95012080002966.html" target="_blank" rel="noopener">skatteverket.se</a>.</p>
+
+      <h2>Räkna på ditt badrum</h2>
+      <p>Vill du se vad som påverkar slutsumman läser du vidare i <a href="/blogg/vad-kostar-en-badrumsrenovering">Vad kostar en badrumsrenovering?</a> Mer om hur vi arbetar finns på sidan om <a href="/badrumsrenovering">badrumsrenovering</a>. Du kan också <a href="/kontakt">kontakta oss</a> för en kostnadsfri offert.</p>
+    `,
+  },
+  {
+    id: 9,
+    title: "Tätskikt i badrum – regler, behörighet och vad du ska fråga",
+    slug: "tatskikt-i-badrum",
+    date: "2026-11-05",
+    author: "Bygg & Plattsättning",
+    readTime: "6 min",
+    category: "Badrumsrenovering",
+    excerpt:
+      "Det är tätskiktet, inte kaklet, som skyddar huset mot vattenskador. Så fungerar branschreglerna BBV 26:1, vad behörigt företag betyder och vad du ska fråga din hantverkare.",
+    content: `
+      <p>Tätskiktet är det vattentäta lagret som sitter under kakel och klinker i ett badrum. Det är tätskiktet, inte plattorna eller fogen, som hindrar vatten från att tränga in i väggar och bjälklag. För att det ska fungera ska det byggas enligt Byggkeramikrådets branschregler för våtrum, BBV, med ett godkänt tätskiktssystem och av ett behörigt företag.</p>
+
+      <h2>Varför kakel och fog inte räcker</h2>
+      <p>Plattorna släpper igenom lite eller inget vatten, men fogarna mellan dem är inte täta. Fog tar upp fukt, och vatten kan ta sig in via sprickor, hörn och genomföringar. Utan ett fungerande tätskikt bakom når fukten underlaget, och skadan upptäcks ofta först när den redan har spridit sig.</p>
+
+      <h2>Branschreglerna BBV 26:1</h2>
+      <p>Byggkeramikrådet (BKR) ger ut branschregler för våtrum där kakel och klinker är ytskikt. Sedan 1 januari 2026 gäller BBV 26:1, som ersätter BBV 21:1. Några av förändringarna:</p>
+      <ul>
+        <li>Kraven på klinkerram har uppdaterats och presenteras tydligare</li>
+        <li>Den högsta tillåtna golvlutningen i bad- och duschplats har ökats, för bättre avrinning mot golvbrunnen</li>
+        <li>Kraven på tätning kring elgenomföringar i våtrum har förtydligats</li>
+        <li>En ny produktgrupp har definierats för hur byggprodukter ansluts mot tätskiktet</li>
+      </ul>
+      <p>BBV är ett frivilligt system som måste avtalas mellan beställare och entreprenör. Anlitar du ett behörigt företag i en konsumententreprenad anses dock ett avtal om BBV alltid vara slutet. Reglerna gäller när ytskiktet är keramik. Väljer du ett annat ytskikt, till exempel mikrocement, gäller leverantörens anvisningar, och då utfärdas inget kvalitetsdokument enligt BBV.</p>
+
+      <h2>Vad betyder behörigt företag?</h2>
+      <p>Ett behörigt företag har fått utbildning i BBV och har valt att arbeta efter reglerna. Det använder godkända tätskiktssystem och kan lämna Byggkeramikrådets kvalitetsdokument, en egenkontroll som visar att våtrummet är byggt fackmässigt. För att kunna bli behörigt ska företaget arbeta med plattsättning och ha egna anställda plattsättare.</p>
+      <p>Du kan kontrollera om ett företag är behörigt på BKR:s sida <a href="https://www.bkr.se/hitta-foretag" target="_blank" rel="noopener">Hitta företag</a>. Reglerna i sin helhet finns på <a href="https://www.bkr.se/regler/branschregler" target="_blank" rel="noopener">bkr.se</a>.</p>
+
+      <h2>Säker Vatten: reglerna för VVS</h2>
+      <p>Tätskiktet är bara en del av ett säkert badrum. Rör, golvbrunn och anslutningar ska också vara rätt utförda. För det finns branschreglerna Säker Vatteninstallation, som ges ut av Säker Vatten AB. Den aktuella versionen är Branschregler Säker Vatteninstallation 2026:1. Reglerna ska minska risken för vattenskador, men också för spridning av legionella, skållning och förgiftning.</p>
+      <p>Säker Vatten auktoriserar VVS-företag, och auktorisationen gäller hela företaget. Montörerna har en branschlegitimation. Du kan söka efter auktoriserade företag på <a href="https://sakervatten.se" target="_blank" rel="noopener">sakervatten.se</a>. Be om intyget om Säker Vatteninstallation när VVS-arbetet är klart.</p>
+
+      <h2>Olika typer av tätskikt</h2>
+      <p>Tätskikt finns i två huvudsakliga varianter. Det ena är ett flytande tätskikt som stryks eller rollas på i flera lager och får torka mellan varje lager. Det andra är en tätskiktsmatta eller folie som klistras mot underlaget. Båda fungerar om de används rätt.</p>
+      <p>Det viktiga är inte vilken typ som används, utan att hela systemet hör ihop. Primer, tätskikt, manschetter för rör och anslutningen mot golvbrunnen ska ingå i samma godkända tätskiktssystem och läggas enligt tillverkarens anvisningar. Det är också därför torktiden inte går att korta. Den är en del av anvisningen.</p>
+
+      <h2>Tecken på att ett tätskikt inte fungerar</h2>
+      <p>I ett äldre badrum kan tätskiktet vara slitet, felaktigt utfört eller helt saknas. Några varningstecken:</p>
+      <ul>
+        <li>Plattor som låter ihåligt eller sitter löst</li>
+        <li>Sprickor i fogar eller plattor, särskilt runt brunnen och i duschhörnet</li>
+        <li>Missfärgningar, mögel eller en unken lukt som inte går bort</li>
+        <li>Fuktfläckar eller bubblande färg på väggen utanför badrummet eller i taket under</li>
+      </ul>
+      <p>Ser du något av detta, låt en fackman titta på det. En fuktskada som får fortsätta blir bara större.</p>
+
+      <h2>De kritiska punkterna</h2>
+      <p>Det är sällan den plana väggytan som läcker. Riskerna sitter i övergångarna:</p>
+      <ul>
+        <li>Anslutningen mellan tätskikt och golvbrunn</li>
+        <li>Rörgenomföringar för blandare och toalett</li>
+        <li>Elgenomföringar, till exempel för belysning och handdukstork</li>
+        <li>Hörn och övergången mellan golv och vägg</li>
+        <li>Golvets lutning, så att vatten rinner mot brunnen och inte blir stående</li>
+      </ul>
+
+      <h2>Frågor att ställa till din hantverkare</h2>
+      <ul>
+        <li>Är ni behöriga enligt Byggkeramikrådet? Kontrollera svaret på bkr.se.</li>
+        <li>Bygger ni enligt BBV 26:1, och står det i offerten?</li>
+        <li>Vilket tätskiktssystem använder ni?</li>
+        <li>Får jag Byggkeramikrådets kvalitetsdokument när badrummet är klart?</li>
+        <li>Vem gör VVS-arbetet, och är företaget auktoriserat enligt Säker Vatten?</li>
+        <li>Får jag intyg om Säker Vatteninstallation?</li>
+        <li>Hur dokumenterar ni tätskiktet innan det täcks av plattor?</li>
+      </ul>
+      <p>Spara dokumenten tillsammans med offert och faktura. De är bra att kunna visa upp den dag du säljer bostaden.</p>
+
+      <h2>Bygg rätt från början</h2>
+      <p>Ett tätskikt går inte att laga i efterhand utan att riva. Därför lönar det sig att göra rätt från början. Läs mer om vår <a href="/badrumsrenovering">badrumsrenovering</a> och <a href="/plattsattning">plattsättning</a>, se vad som påverkar priset i <a href="/blogg/vad-kostar-en-badrumsrenovering">Vad kostar en badrumsrenovering?</a> eller <a href="/kontakt">kontakta oss</a> för en kostnadsfri offert.</p>
+    `,
+  },
 ]
 
 /** All posts, newest first. */

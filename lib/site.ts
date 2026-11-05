@@ -5,8 +5,8 @@ export const SITE = {
   // ── FILL IN ── Legal company name and org.nr (e.g. "Bygg & Plattsättning i Eskilstuna AB",
   // "559123-4567"). Shown in the footer and sent to Google as soon as they are set.
   // Required by e-handelslagen and helps Google tell you apart from other firms with similar names.
-  legalName: "" as string,
-  orgNr: "" as string,
+  legalName: "Bygg & Fastighet i Eskilstuna AB" as string,
+  orgNr: "556687-4300" as string,
   // ── FILL IN ── Official profile URLs: Google Business Profile, Facebook, Instagram,
   // Reco, Allabolag, etc. Sent to Google as `sameAs` (links your website to the profiles).
   profiles: [] as string[],
